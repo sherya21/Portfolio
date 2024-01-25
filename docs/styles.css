@@ -1,0 +1,68 @@
+/* css styles */
+ @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+
+ /*------------- Whole Document---------------- */
+
+body {
+    font-family: 'Urbanist';
+    font-size: 14px;
+}
+
+/* Header image */
+
+header {
+  background-image: url('course-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain; /* Adjust as needed */
+  background-position: right top; /* Adjust as needed */
+  /* Other styles for the header */
+}
+
+
+/* Change the font style for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Urbanist'; /* Replace "Your Desired Font" with the actual font you want to use */
+  /* Additional styling properties can be added here, such as color, size, etc. */
+}
+
+/* Adjust the size for the document title */
+.title {
+  font-size: 18px; 
+}
+
+/* Adjust the size for the document subtitle */
+.subtitle {
+  font-size: 16px; 
+}
+
+/*----------LOGO above TOC---------*/
+
+#TOC::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: 20px 20px 40px 20px;
+  background-image: url("course-icon.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*------------Table of Contents (TOC)----------- */
+
+
+.tocify {
+  border: none;   /*Removes border */
+  border-radius: 0px; /* Gets rid of rounded corners on TOC */
+  font-size: 14px;
+}
+
+/*body {
+  background-color: #FFFFEB; /* Replace with your desired color code or name */
+}*/
+
+
+.toc a {
+  font-weight: bold;
+}

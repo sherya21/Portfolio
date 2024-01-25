@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 3333
+
+website:
+  title: "Oregon Wildfire Prediction"
+  site-url: "https://musa-550-fall-2023.github.io/oregon-wildfire-prediction" 
+  repo-url: https://github.com/MUSA-550-Fall-2023/quarto-website-template 
+  repo-actions: [source]
+
+  page-footer:
+    right: "This page is built with [Quarto](https://quarto.org/)."
+    left: "&copy; CC-Shreya Bansal and Kathleen Scopis, 2023 with template from Nick Hand"
+
+  sidebar:
+    logo: "images/fires.jpg"
+    pinned: true
+    align: center
+    tools: 
+      - icon: github
+        href: https://github.com/MUSA-550-Fall-2023/
+        text: "MUSA 550 GitHub"
+
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Welcome
+      - about.qmd
+      - section: analysis/index.qmd
+        contents: 
+          - analysis/US_wild.ipynb
+          - analysis/Dashboard_US.ipynb
+          - analysis/Final_V3.ipynb
+          - analysis/Dashboard.ipynb
+          
+format:
+  html:
+    highlight-style: solarized
+    theme: darkly
+    css: styles.css
+    code-copy: true
+    code-overflow: wrap
+    toc: true
