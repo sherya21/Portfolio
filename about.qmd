@@ -1,5 +1,5 @@
 ---
-title: "About us"
+title: "About me"
 ---
 
 <!-- Use a grid -->
@@ -7,14 +7,14 @@ title: "About us"
 
 <!-- Left column has a width of 4/12 and shows a picture of me -->
 ::: {.g-col-4}
-![](images/IMG_6464.jpeg){width=4in}
+![](images/Shreya_headshot.jpg){width=4in}
 :::
 
 <!-- Text gets a column with width 8/12 -->
 ::: {.g-col-8}
 
-We are Kathleen and Shreya. 
-Our collaboration goes beyond this project; we have been roommates since semester 1 and have wanted to work on an interesting project together. Based on the incessant conversations in the living room until 2am, we really wanted to study and visualize an impending problem and test whether it is affected by climate change. 
+Shreya Bansal is a second year Master of City Planning candidate at the Weitzman School of Design, UPenn. A designer, thinker, advocate, researcher and planner, Shreya brings together her eclectic skills wherever she goes. 
+
 ::: 
 
 :::

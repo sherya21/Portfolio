@@ -1,45 +1,38 @@
 ---
-title: "Oregon Wildfire Study"
-subtitle: "Studying wildfires in OR between 1992-2015"
+title: "Shreya Bansal"
+subtitle: "Data Analyst and Urban Thinker"
+format: 
+  html: 
+    page-layout: full
+listing:
+  - id: portfolio
+    contents: "projects/**/index.qmd"
+    type: grid
+    fields: [image]
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: [title, date, categories]
+    page-size: 4
+    image-align: right
+    image-height: 4inch
+    categories: cloud
+    
+  - id: categories
+    contents: "projects/**/index.qmd"
+    type: grid
+    fields: [categories]
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: [title, date, categories]
+    page-size: 4
+    categories: cloud
 ---
 
-## Wildfires
+## I'm Shreya. I'm a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. But most of all, I wish to keep learning and growing. 
 
-Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States.  As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.  
-
-::: {.callout}
-The National Interagency Fire Center statistics show that as of Dec. 7, 2023, there have been 53,685 fires this year that have burned nearly 2.61 million acres. 
+## Which identity of me are you hoping to meet today?
+::: {#categories.column-body-outset-left}
 :::
 
-
-<!-- Left column has a width of 4/12 and shows a picture of wildfire stats -->
-::: {.g-col-4}
-![](images/stats.png){width=10in}
-[Source](https://www.epa.gov/climate-indicators/climate-change-indicators-wildfires)
+::: {#portfolio.column-screen-right}
 :::
-
-## Project scope
-For our final project, we explore instances of wildfires across the United States, focusing on Oregon as a case study.  As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.
-
-## Key inquiries:
-Our report consists of five major pieces:
-Manipulation of multiple datasets, some that are rather large, with more than 1,000,000 rows.
-Complex analysis, including geospatial joining and data shaping of large datasets
-Temporally and spatially-sensitive analysis
-Data frame operations using ‘astropy’ and ‘datetime’ packages for data conversions.
-An interactive panel dashboard
-
-## Methodology
-The following analysis details an exploration of a spatial database that reports wildfires which burned in the US between 1992 and 2015. Detailing nearly 2 million wildfires, the data is publicly accessible from Kaggle and represents observations collected on the federal, state, and local level by fire and emergency organizations. In total, 140 million acres of burning were collected over the 24 year period. Assessing factors related to the spread of wildfires across Oregon is multifaceted, including geospatial and feature-related questions.  Because of this, it will be crucial for us to utilise many of the packages and techniques discussed in class.
-
-### Data
-Data is obtained from the following sources:
-1. [Kaggle fire dataset (1992-2015)](https://www.kaggle.com/code/captcalculator/wildfire-exploratory-analysis)
-2. Riem measures data
-
-Wildfire data: https://www.fs.usda.gov/rds/archive/Catalog/RDS-2013-0009.4/
-Climate data: https://www.weather.gov/asos/#:~:text=The%20Automated%20Surface%20Observing%20Systems,primary%20surface%20weather%20observing%20network
-
-## Find out more
-For more information about US wide wildfires, see this [link](https://www.nifc.gov/fire-information/nfn).
-For more information about Oregon wildfires, see this [official website](https://wildfire.oregon.gov/) for Oregon Wildfire Risk and Recovery. 

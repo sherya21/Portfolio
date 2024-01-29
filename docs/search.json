@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Oregon Wildfire Study",
+    "title": "Shreya Bansal",
     "section": "",
-    "text": "Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.\n\n\n\n\n\n\nThe National Interagency Fire Center statistics show that as of Dec. 7, 2023, there have been 53,685 fires this year that have burned nearly 2.61 million acres.\n\n\n\n\n\n Source"
+    "text": "I’m Shreya.\n\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "index.html#wildfires",
@@ -114,9 +114,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About us",
+    "title": "About me",
     "section": "",
-    "text": "We are Kathleen and Shreya. Our collaboration goes beyond this project; we have been roommates since semester 1 and have wanted to work on an interesting project together. Based on the incessant conversations in the living room until 2am, we really wanted to study and visualize an impending problem and test whether it is affected by climate change."
+    "text": "Shreya Bansal is a second year Master of City Planning candidate at the Weitzman School of Design, UPenn. A designer, thinker, advocate, researcher and planner, Shreya brings together her eclectic skills wherever she goes.\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "analysis/Dashboard.html",
@@ -158,7 +158,7 @@
     "href": "analysis/index.html",
     "title": "Analysis",
     "section": "",
-    "text": "Analysis\nWildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years, largely related to climate change fears. For our final project, we explore instances of wildfires across the United States, focusing on Oregon as a case study. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State."
+    "text": "Analysis\nWildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years, largely related to climate change fears. For our final project, we explore instances of wildfires across the United States, focusing on Oregon as a case study. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "analysis/US_Dashboard.html",
@@ -193,7 +193,7 @@
     "href": "analysis/US_wild.html#clean-data",
     "title": "US wildfires",
     "section": "Clean Data",
-    "text": "Clean Data\n\ndrop_columns = ['NWCG_REPORTING_AGENCY',\n                'NWCG_REPORTING_UNIT_ID',\n                'NWCG_REPORTING_UNIT_NAME',\n                'FIRE_NAME',\n                'COMPLEX_NAME', \n                'OWNER_DESCR',\n                'OWNER_CODE']\ndf_US = df_raw.drop(columns= drop_columns)\ndf_US['MONTH'] = df_US['DISCOVERY_DATE'].apply(lambda x: jd2gcal(x, 0)[1])\ndf_US['DAY'] = df_US['DISCOVERY_DATE'].apply(lambda x: jd2gcal(x, 0)[2])\n\n\ngeometry = [Point(xy) for xy in zip(df_US['LONGITUDE'], df_US['LATITUDE'])]\ndf_geo = gpd.GeoDataFrame(df_US, geometry=geometry)\ndf_geo.crs = \"EPSG:4326\"\n\n\nstates = alt.topo_feature(data.us_10m.url, feature='states')\nus_states = gpd.read_file(\"cb_2018_us_state_500k/cb_2018_us_state_500k.shp\")\nus_states_geojson = 'states.json' \n\n\nimport plotly.express as px\nimport geopandas as gpd\nfrom sklearn.preprocessing import MinMaxScaler\n\n\ndf_grouped = df_geo.groupby(['STATE'], as_index=False).agg({'LATITUDE': 'mean', 'LONGITUDE': 'mean', 'FIRE_SIZE': 'sum' })\n\n\nscaler = MinMaxScaler(feature_range=(1, 10))\ndf_grouped['markersize'] = scaler.fit_transform(df_grouped[['FIRE_SIZE']])\n\n\nimport panel as pn\npn.extension('plotly')\ndef create_dashboard():\n    # Create a scatter_geo figure\n    fig = px.scatter_geo(\n        df_grouped,\n        locations='STATE',\n        locationmode='USA-states',\n        color='FIRE_SIZE',\n        size='markersize',\n        hover_name='STATE',\n        projection='natural earth',\n        title='Wildfires in US States',\n        template='plotly',\n    )\n\n    # Update geos settings\n    fig.update_geos(\n        center=dict(lon=-100, lat=40),\n        projection_scale=2,\n        showcoastlines=True,\n        coastlinecolor='black',\n        showsubunits=True,\n        subunitcolor='black',\n        subunitwidth=2,\n        landcolor='darkgrey',\n        showocean=True,\n        oceancolor='azure',\n    )\n\n    return pn.pane.Plotly(fig)\n\n# Create the Panel app\napp = pn.Column(\"## Wildfires Dashboard\", create_dashboard)\n\n# Display the app\napp.servable()\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nTo begin investigating trends in wildfires across Oregon, it is important to first consider the larger national perspective. The map above details the total acreage burned in each state. Overall, Alaska far surpasses any other state, while California and Idaho show the highest amount burned in the continental US. These trends are expected, however, as these states are larger than others seen throughout the country, particularly along the midwest and eastern coast. To learn more, hover over each state to explore details including the amount of area burned. (Please look at the hyperlinked figure; sometimes the panel and html don’t render correctly)."
+    "text": "Clean Data\n\ndrop_columns = ['NWCG_REPORTING_AGENCY',\n                'NWCG_REPORTING_UNIT_ID',\n                'NWCG_REPORTING_UNIT_NAME',\n                'FIRE_NAME',\n                'COMPLEX_NAME', \n                'OWNER_DESCR',\n                'OWNER_CODE']\ndf_US = df_raw.drop(columns= drop_columns)\ndf_US['MONTH'] = df_US['DISCOVERY_DATE'].apply(lambda x: jd2gcal(x, 0)[1])\ndf_US['DAY'] = df_US['DISCOVERY_DATE'].apply(lambda x: jd2gcal(x, 0)[2])\n\n\ngeometry = [Point(xy) for xy in zip(df_US['LONGITUDE'], df_US['LATITUDE'])]\ndf_geo = gpd.GeoDataFrame(df_US, geometry=geometry)\ndf_geo.crs = \"EPSG:4326\"\n\n\nstates = alt.topo_feature(data.us_10m.url, feature='states')\nus_states = gpd.read_file(\"cb_2018_us_state_500k/cb_2018_us_state_500k.shp\")\nus_states_geojson = 'states.json' \n\n\nimport plotly.express as px\nimport geopandas as gpd\nfrom sklearn.preprocessing import MinMaxScaler\n\n\ndf_grouped = df_geo.groupby(['STATE'], as_index=False).agg({'LATITUDE': 'mean', 'LONGITUDE': 'mean', 'FIRE_SIZE': 'sum' })\n\n\nscaler = MinMaxScaler(feature_range=(1, 10))\ndf_grouped['markersize'] = scaler.fit_transform(df_grouped[['FIRE_SIZE']])\n\n\nimport panel as pn\npn.extension('plotly')\ndef create_dashboard():\n    # Create a scatter_geo figure\n    fig = px.scatter_geo(\n        df_grouped,\n        locations='STATE',\n        locationmode='USA-states',\n        color='FIRE_SIZE',\n        size='markersize',\n        hover_name='STATE',\n        projection='natural earth',\n        title='Wildfires in US States',\n        template='plotly',\n    )\n\n    # Update geos settings\n    fig.update_geos(\n        center=dict(lon=-100, lat=40),\n        projection_scale=2,\n        showcoastlines=True,\n        coastlinecolor='black',\n        showsubunits=True,\n        subunitcolor='black',\n        subunitwidth=2,\n        landcolor='darkgrey',\n        showocean=True,\n        oceancolor='azure',\n    )\n\n    return pn.pane.Plotly(fig)\n\n# Create the Panel app\napp = pn.Column(\"## Wildfires Dashboard\", create_dashboard)\n\n# Display the app\napp.servable()\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nTo begin investigating trends in wildfires across Oregon, it is important to first consider the larger national perspective. The map above details the total acreage burned in each state. Overall, Alaska far surpasses any other state, while California and Idaho show the highest amount burned in the continental US. These trends are expected, however, as these states are larger than others seen throughout the country, particularly along the midwest and eastern coast. To learn more, hover over each state to explore details including the amount of area burned. Please look at the hyperlinked figure; sometimes the panel and html don’t render correctly at figure"
   },
   {
     "objectID": "analysis/US_wild.html#fire-cause-by-state",
@@ -236,5 +236,292 @@
     "title": "Oregon Wildfire Prediction",
     "section": "Monthly/Seasonaly fire frequency",
     "text": "Monthly/Seasonaly fire frequency\n\ncustom_colors = ['#68A33E','#FFFF82','#FB9E60','#A10702', '#0F0326']  # Add your desired hex colors\ndf_freq_mon = df_geo.groupby(['MONTH', 'FIRE_YEAR']).size().unstack()\ndf_freq_mon.to_csv(\"wildfireDataUS.csv\")\n# plot monthly frequency of fire events\ncounter_fig = 1\nmon_ticks = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']\nplt.figure(figsize=[11,5])\nsns.heatmap(df_freq_mon, cmap=custom_colors, linewidth=.2, linecolor=[.9,.9,.9])\nplt.yticks(np.arange(0.5,12.5), labels=mon_ticks, rotation=0, fontsize=12)\nplt.xticks(fontsize=12);\nplt.xlabel('')\nplt.ylabel('Month', fontsize=13)\nplt.title(f'Fig {counter_fig}. Number of fire events in US', fontsize=13)\nplt.tight_layout()\n\n# plot fire frequency by cause and day of year\ncause_by_doy = df_geo.groupby(['STAT_CAUSE_DESCR','DISCOVERY_DOY']).size().unstack()\ncounter_fig +=1\nplt.figure(figsize=[10,5])\nax = sns.heatmap(cause_by_doy,cmap=custom_colors,vmin=0,vmax=500) #'CMRmap_r' &lt;- old color scheme\nplt.xticks(np.arange(0.5,366.5,20), labels=range(1,366,20), rotation=0, fontsize=11)\nplt.yticks(fontsize=11)\nplt.ylabel('Fire Cause', fontsize=12)\nplt.xlabel('Day of year', fontsize=12)\nfor borders in [\"top\",\"right\",\"left\",\"bottom\"]:\n    ax.spines[borders].set_visible(True)\nplt.title(f'Fig {counter_fig}. Distribution of US fires by cause & day of year')\nplt.tight_layout()\n\n\n\n\n\n\n\n\nfig = px.sunburst(df_geo, path=['FIRE_YEAR', 'MONTH', 'STAT_CAUSE_DESCR'], title='Main Causes of Fire by Month and Year')\nfig.update_layout(margin=dict(l=0, r=0, b=0, t=40))  # Adjust layout if needed\nfig.show()"
+  },
+  {
+    "objectID": "projects/3_/index.html",
+    "href": "projects/3_/index.html",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "",
+    "text": "Full Project\n  \n  \n    \n     Permitting Dahboard mock-up\n  \n  \n    \n     OpenData Portal mock-up\n  \n  \n    \n     Book"
+  },
+  {
+    "objectID": "projects/1_Wildfires/index.html",
+    "href": "projects/1_Wildfires/index.html",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "",
+    "text": "##Project\n\n\n\n\n\n\n\nA full screen image\n\n\n\n\n\n\n\n\ntext about the project and lots of it. DigiPlay works to solve this challenge of inequitable access to play by transforming dull play spacing into interactive, digitally-latent ones that encourage movement and serve as another avenue for learning and education in schools. Our solution has three major components, outfitting schools that already had some play equipment with DigiPlay sensors, Creating digital experiences for schools with no play equipment, and layering on educational components of the playground. Additionally, our solution is cost effective for schools to adopt, with 1-3 interactive installations on a playground costing about ~$300 to install and another ~$100 to maintain on a yearly basis. Thus, DigiPlay is an inexpensive way to explore the transformative potential of embedded technologies in our built environment.\nThis project is a culmination of the skills gained in the Spring 2023 Sensing the City class taught by my instructor and advisor, Professor Allison Lassiter. Find the full post of the DigiPlay project on that website here.\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/2_/index.html",
+    "href": "projects/2_/index.html",
+    "title": "Wildfires in US and Oregon",
+    "section": "",
+    "text": "Full Project Website\n  \n\n      \n\n    \n    \n  \n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html#which-identity-of-me-are-you-hoping-to-meet-today",
+    "href": "index.html#which-identity-of-me-are-you-hoping-to-meet-today",
+    "title": "Shreya Bansal",
+    "section": "Which identity of me are you hoping to meet today?",
+    "text": "Which identity of me are you hoping to meet today?"
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html",
+    "href": "projects/1_DigiPlay/index.html",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "",
+    "text": "This is an interactive playground installation made to scale across the city of Philadelphia. DigiPlay aims to create equitable access to play and promote health for kids 2-12 in Philadelphia by turning playgrounds into interactive and immersive experiences. This is achieved by adding a digitally latent layer to playgrounds that strives to improve the play experience, supplement STEM education, and encourage more physical activity for children in Philadelphia schools."
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#the-challenge",
+    "href": "projects/1_DigiPlay/index.html#the-challenge",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "The Challenge",
+    "text": "The Challenge\nAs it stands, many elementary school playgrounds in Philadelphia are either converted parking lots or have aging, inadequate playground equipment. As a result, 25% of the youth in Philadelphia do not get sustained physical activity even once a week. Unfortunately, upgrading and refurbishing playground equipment can cost anywhere between $8,000-$50,000, and there is no substantial line item in the Philadelphia School District’s annual budget to support upgrading playgrounds for children. As a result of this lack of physical activity, many kids in the city are facing health challenges such as obesity. In fact, 1 in 5 of youth in Philadelphia, the majority of whom are black or Hispanic, are overweight or obese. Furthermore, 70% of children in in North Philly are overweight or obese, which is nearly double the obesity and overweight rate for youth in the United States. Better access to play can solve these challenges for kids."
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#the-solution",
+    "href": "projects/1_DigiPlay/index.html#the-solution",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "The Solution",
+    "text": "The Solution\nDigiPlay works to solve this challenge of inequitable access to play by transforming dull play spacing into interactive ones that encourage movement and serve as another avenue for learning and education in schools. Our solution has three major components, outfitting schools that already had some play equipment with DigiPlay sensors, Creating digital experiences for schools with no play equipment, and layering on educational components of the playground. Additionally, our solution is cost effective for schools to adopt. Creating 1-3 interactive installations on a playground would cost the school ~$300 to install and another ~$100 to maintain on a yearly basis."
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#technical-components",
+    "href": "projects/1_DigiPlay/index.html#technical-components",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "Technical Components",
+    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\nInteract & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\n\nVideo\nHeartrate Sensor at play\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram\n\n\n\n\n\n  \n    \n       \n  \n    \n     Full Project + Code\n  \n  \n    \n     Tutorial\n  \n  \n    \n     Slideshow"
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#site-selection",
+    "href": "projects/1_DigiPlay/index.html#site-selection",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "Site selection",
+    "text": "Site selection\nTo facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.\n\n\n\n\n\nSite selection\n\n\n\n\n\n\n\nFinal pilot site"
+  },
+  {
+    "objectID": "projects/2_/index.html#the-challenge",
+    "href": "projects/2_/index.html#the-challenge",
+    "title": "Wildfires in US and Oregon",
+    "section": "The Challenge",
+    "text": "The Challenge\nAs it stands, many elementary school playgrounds in Philadelphia are either converted parking lots or have aging, inadequate playground equipment. As a result, 25% of the youth in Philadelphia do not get sustained physical activity even once a week. Unfortunately, upgrading and refurbishing playground equipment can cost anywhere between $8,000-$50,000, and there is no substantial line item in the Philadelphia School District’s annual budget to support upgrading playgrounds for children. As a result of this lack of physical activity, many kids in the city are facing health challenges such as obesity. In fact, 1 in 5 of youth in Philadelphia, the majority of whom are black or Hispanic, are overweight or obese. Furthermore, 70% of children in in North Philly are overweight or obese, which is nearly double the obesity and overweight rate for youth in the United States. Better access to play can solve these challenges for kids."
+  },
+  {
+    "objectID": "projects/2_/index.html#the-solution",
+    "href": "projects/2_/index.html#the-solution",
+    "title": "Wildfires in US and Oregon",
+    "section": "The Solution",
+    "text": "The Solution\nDigiPlay works to solve this challenge of inequitable access to play by transforming dull play spacing into interactive ones that encourage movement and serve as another avenue for learning and education in schools. Our solution has three major components, outfitting schools that already had some play equipment with DigiPlay sensors, Creating digital experiences for schools with no play equipment, and layering on educational components of the playground. Additionally, our solution is cost effective for schools to adopt. Creating 1-3 interactive installations on a playground would cost the school ~$300 to install and another ~$100 to maintain on a yearly basis."
+  },
+  {
+    "objectID": "projects/2_/index.html#site-selection",
+    "href": "projects/2_/index.html#site-selection",
+    "title": "Wildfires in US and Oregon",
+    "section": "Site selection",
+    "text": "Site selection\nTo facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.\n\n\n\n\n\nSite selection\n\n\n\n\n\n\n\nFinal pilot site"
+  },
+  {
+    "objectID": "projects/2_/index.html#technical-components",
+    "href": "projects/2_/index.html#technical-components",
+    "title": "Wildfires in US and Oregon",
+    "section": "Technical Components",
+    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\n\n3.Interact & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\nVideo\nA margin image\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram\n\n\n\n\n\n  \n    \n       \n  \n    \n     Full Project Website"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html",
+    "href": "projects/2_Wildfires/index.html",
+    "title": "Wildfires in US and Oregon",
+    "section": "",
+    "text": "Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State."
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#clean-data",
+    "href": "projects/2_Wildfires/index.html#clean-data",
+    "title": "US wildfires",
+    "section": "Clean Data",
+    "text": "Clean Data\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nTo begin investigating trends in wildfires across Oregon, it is important to first consider the larger national perspective. The map above details the total acreage burned in each state. Overall, Alaska far surpasses any other state, while California and Idaho show the highest amount burned in the continental US. These trends are expected, however, as these states are larger than others seen throughout the country, particularly along the midwest and eastern coast. To learn more, hover over each state to explore details including the amount of area burned. Please look at the hyperlinked figure; sometimes the panel and html don’t render correctly at figure"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#fire-cause-by-state",
+    "href": "projects/2_Wildfires/index.html#fire-cause-by-state",
+    "title": "US wildfires",
+    "section": "Fire cause by state",
+    "text": "Fire cause by state"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#monthlyseasonaly-fire-frequency",
+    "href": "projects/2_Wildfires/index.html#monthlyseasonaly-fire-frequency",
+    "title": "US wildfires",
+    "section": "Monthly/Seasonaly fire frequency",
+    "text": "Monthly/Seasonaly fire frequency\n\n\n\n\n\nThe visualization above shows spread of recorded wildfires across the year, with the darker colors indicating more instances of wildfire. Across the last 24 years, late spring and late summer saw the most burning, with a period of increased fires during the spring of 2006. On average, less than 8,000 fires burn per month across the US - however, certain months tend to tell another story, where more than 16,000 burned in the same time period. There appears to be a slight dip in fires during the early summer months of May and June.\n\n\n\n\n\nNext, we observe which activities are the most likely causes of wildfires across the country depending on the time of year. According to the visualization above, arson, debris burning, and other mixed causes are commonplace throughout the year, while other common reasons tend to spike in specific seasons. For example, lightning strikes and equipment use are common causes during the summertime, when summer storms bring seasonal spikes in thundering clouds, and when people are more likely to get outside and run types of equipment that have the ability to catch ablaze. An interesting observation lies in the missing and undefined category, which is most likely to be recorded in the first half of the year."
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#causes-by-year",
+    "href": "projects/2_Wildfires/index.html#causes-by-year",
+    "title": "US wildfires",
+    "section": "Causes by year",
+    "text": "Causes by year\n```ayvtnx \nFinally, we observe trends in common causes of wildfires by year. To interact with the visualization, select a year from the center of the wheel. The information becomes increasingly detailed as the wheel is explored outwards."
+  },
+  {
+    "objectID": "projects/2_Wildfires/US_wild.html",
+    "href": "projects/2_Wildfires/US_wild.html",
+    "title": "US wildfires",
+    "section": "",
+    "text": "import datetime\nfrom jdcal import jd2gcal\nfrom matplotlib import gridspec\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\nimport seaborn as sns\nimport sqlite3\nimport xarray as xr\nimport geopandas as gpd\nfrom matplotlib import pyplot as plt\n\nimport cdsapi\nimport sklearn_pandas as skp\nfrom shapely.geometry import Point\nimport altair as alt\nfrom vega_datasets import data\nimport plotly.express as px\nimport panel as pn\npn.extension('plotly')\n\ncustom_colors = ['#68A33E', '#A10702', '#FB9E60', '#FFFF82', '#0F0326']"
+  },
+  {
+    "objectID": "projects/2_Wildfires/US_wild.html#clean-data",
+    "href": "projects/2_Wildfires/US_wild.html#clean-data",
+    "title": "US wildfires",
+    "section": "Clean Data",
+    "text": "Clean Data\n\ndrop_columns = ['NWCG_REPORTING_AGENCY',\n                'NWCG_REPORTING_UNIT_ID',\n                'NWCG_REPORTING_UNIT_NAME',\n                'FIRE_NAME',\n                'COMPLEX_NAME', \n                'OWNER_DESCR',\n                'OWNER_CODE']\ndf_US = df_raw.drop(columns= drop_columns)\ndf_US['MONTH'] = df_US['DISCOVERY_DATE'].apply(lambda x: jd2gcal(x, 0)[1])\ndf_US['DAY'] = df_US['DISCOVERY_DATE'].apply(lambda x: jd2gcal(x, 0)[2])\n\n\ngeometry = [Point(xy) for xy in zip(df_US['LONGITUDE'], df_US['LATITUDE'])]\ndf_geo = gpd.GeoDataFrame(df_US, geometry=geometry)\ndf_geo.crs = \"EPSG:4326\"\n\n\nstates = alt.topo_feature(data.us_10m.url, feature='states')\nus_states = gpd.read_file(\"cb_2018_us_state_500k/cb_2018_us_state_500k.shp\")\nus_states_geojson = 'states.json' \n\n\nimport plotly.express as px\nimport geopandas as gpd\nfrom sklearn.preprocessing import MinMaxScaler\n\n\ndf_grouped = df_geo.groupby(['STATE'], as_index=False).agg({'LATITUDE': 'mean', 'LONGITUDE': 'mean', 'FIRE_SIZE': 'sum' })\n\n\nscaler = MinMaxScaler(feature_range=(1, 10))\ndf_grouped['markersize'] = scaler.fit_transform(df_grouped[['FIRE_SIZE']])\n\n\nimport panel as pn\npn.extension('plotly')\ndef create_dashboard():\n    # Create a scatter_geo figure\n    fig = px.scatter_geo(\n        df_grouped,\n        locations='STATE',\n        locationmode='USA-states',\n        color='FIRE_SIZE',\n        size='markersize',\n        hover_name='STATE',\n        projection='natural earth',\n        title='Wildfires in US States',\n        template='plotly',\n    )\n\n    # Update geos settings\n    fig.update_geos(\n        center=dict(lon=-100, lat=40),\n        projection_scale=2,\n        showcoastlines=True,\n        coastlinecolor='black',\n        showsubunits=True,\n        subunitcolor='black',\n        subunitwidth=2,\n        landcolor='darkgrey',\n        showocean=True,\n        oceancolor='azure',\n    )\n\n    return pn.pane.Plotly(fig)\n\n# Create the Panel app\napp = pn.Column(\"## Wildfires Dashboard\", create_dashboard)\n\n# Display the app\napp.servable()\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nTo begin investigating trends in wildfires across Oregon, it is important to first consider the larger national perspective. The map above details the total acreage burned in each state. Overall, Alaska far surpasses any other state, while California and Idaho show the highest amount burned in the continental US. These trends are expected, however, as these states are larger than others seen throughout the country, particularly along the midwest and eastern coast. To learn more, hover over each state to explore details including the amount of area burned. Please look at the hyperlinked figure; sometimes the panel and html don’t render correctly at figure"
+  },
+  {
+    "objectID": "projects/2_Wildfires/US_wild.html#fire-cause-by-state",
+    "href": "projects/2_Wildfires/US_wild.html#fire-cause-by-state",
+    "title": "US wildfires",
+    "section": "Fire cause by state",
+    "text": "Fire cause by state\n\ndf_viz = df_geo.groupby(['STATE', 'STAT_CAUSE_DESCR']).size().reset_index(name='Number_of_Fires')\n\nchart = alt.Chart(df_viz).mark_bar().encode(\n    x='sum(Number_of_Fires):Q',\n    y=alt.Y('STATE:N', sort='-x'),\n    color='STAT_CAUSE_DESCR:N',\n    tooltip=['STATE:N', 'STAT_CAUSE_DESCR:N', 'sum(Number_of_Fires):Q']\n).interactive()\n\nchart"
+  },
+  {
+    "objectID": "projects/2_Wildfires/US_wild.html#monthlyseasonaly-fire-frequency",
+    "href": "projects/2_Wildfires/US_wild.html#monthlyseasonaly-fire-frequency",
+    "title": "US wildfires",
+    "section": "Monthly/Seasonaly fire frequency",
+    "text": "Monthly/Seasonaly fire frequency\n\ncustom_colors = ['#68A33E','#FFFF82','#FB9E60','#A10702', '#0F0326']  # Add your desired hex colors\ndf_freq_mon = df_geo.groupby(['MONTH', 'FIRE_YEAR']).size().unstack()\ndf_freq_mon.to_csv(\"wildfireDataUS.csv\")\n# plot monthly frequency of fire events\ncounter_fig = 1\nmon_ticks = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']\nplt.figure(figsize=[11,5])\nsns.heatmap(df_freq_mon, cmap=custom_colors, linewidth=.2, linecolor=[.9,.9,.9])\nplt.yticks(np.arange(0.5,12.5), labels=mon_ticks, rotation=0, fontsize=12)\nplt.xticks(fontsize=12);\nplt.xlabel('')\nplt.ylabel('Month', fontsize=13)\nplt.title(f'Fig {counter_fig}. Number of fire events in US', fontsize=13)\nplt.tight_layout()\n\n\n\n\nThe visualization above shows spread of recorded wildfires across the year, with the darker colors indicating more instances of wildfire. Across the last 24 years, late spring and late summer saw the most burning, with a period of increased fires during the spring of 2006. On average, less than 8,000 fires burn per month across the US - however, certain months tend to tell another story, where more than 16,000 burned in the same time period. There appears to be a slight dip in fires during the early summer months of May and June.\n\n# plot fire frequency by cause and day of year\ncause_by_doy = df_geo.groupby(['STAT_CAUSE_DESCR','DISCOVERY_DOY']).size().unstack()\ncounter_fig +=1\nplt.figure(figsize=[10,5])\nax = sns.heatmap(cause_by_doy,cmap=custom_colors,vmin=0,vmax=500) #'CMRmap_r' &lt;- old color scheme\nplt.xticks(np.arange(0.5,366.5,20), labels=range(1,366,20), rotation=0, fontsize=11)\nplt.yticks(fontsize=11)\nplt.ylabel('Fire Cause', fontsize=12)\nplt.xlabel('Day of year', fontsize=12)\nfor borders in [\"top\",\"right\",\"left\",\"bottom\"]:\n    ax.spines[borders].set_visible(True)\nplt.title(f'Fig {counter_fig}. Distribution of US fires by cause & day of year')\nplt.tight_layout()\n\n\n\n\nNext, we observe which activities are the most likely causes of wildfires across the country depending on the time of year. According to the visualization above, arson, debris burning, and other mixed causes are commonplace throughout the year, while other common reasons tend to spike in specific seasons. For example, lightning strikes and equipment use are common causes during the summertime, when summer storms bring seasonal spikes in thundering clouds, and when people are more likely to get outside and run types of equipment that have the ability to catch ablaze. An interesting observation lies in the missing and undefined category, which is most likely to be recorded in the first half of the year."
+  },
+  {
+    "objectID": "projects/2_Wildfires/US_wild.html#causes-by-year",
+    "href": "projects/2_Wildfires/US_wild.html#causes-by-year",
+    "title": "US wildfires",
+    "section": "Causes by year",
+    "text": "Causes by year\n\nfig_q = px.sunburst(df_geo, path=['FIRE_YEAR', 'MONTH', 'STAT_CAUSE_DESCR'], title='Main Causes of Fire by Month and Year')\nfig_q.update_layout(margin=dict(l=0, r=0, b=0, t=40))  # Adjust layout if needed\n\n# Save the figure as an HTML file\nfig_q.write_html(\"sunburst_chart.html\")\n\n\n\nFinally, we observe trends in common causes of wildfires by year. To interact with the visualization, select a year from the center of the wheel. The information becomes increasingly detailed as the wheel is explored outwards."
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#us-wids-wildfires",
+    "href": "projects/2_Wildfires/index.html#us-wids-wildfires",
+    "title": "US wildfires",
+    "section": "US WId’s Wildfires",
+    "text": "US WId’s Wildfires\n\nDashboard (Acres burnt + Weather factors)"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#oregons-wildfires",
+    "href": "projects/2_Wildfires/index.html#oregons-wildfires",
+    "title": "Wildfires in US and Oregon",
+    "section": "Oregon’s Wildfires",
+    "text": "Oregon’s Wildfires\n\n\n\n\n\n\n\nDashboard (Acres burnt + Weather factors)\nThe visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed).\n\n\n\n  \n    \n       \n  \n    \n     Full Project Website"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#us-wide-wildfires",
+    "href": "projects/2_Wildfires/index.html#us-wide-wildfires",
+    "title": "Wildfires in US and Oregon",
+    "section": "US Wide Wildfires",
+    "text": "US Wide Wildfires\n\nCauses\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard (Acres burnt by State)\nThe below interactive dahsboard shows total acres burnt between 1992-2015 in each US state."
+  },
+  {
+    "objectID": "projects/3_/index.html#project",
+    "href": "projects/3_/index.html#project",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "Project",
+    "text": "Project"
+  },
+  {
+    "objectID": "projects/3_/index.html#introduction",
+    "href": "projects/3_/index.html#introduction",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "Introduction",
+    "text": "Introduction\nUSVI is under immense climate stress. Following the hurricanes in 2017 and the pandemic in 2020, the continued climate change crisis, it is clear that we need to help the islands become more resilient and healthy. We believe that the way to make this more efficient and faster would be by using data to help plan and manage resources. Through this project we want to answer how data analytics can help St. Thomas with climate and environmental planning? What does a systemic and localized data framework look like for St.Thomas? How can local agencies leverage data to better understand and respond to climate change and help vulnerable communities?\nTo manage this it needs a robust plan and a network of real-time updates to be prepared and resilient. Currently it has over 600+ datasets that contain information around demographics and climatic stressors but these are stored across the internet in various sources. DPNR, the planning agency of the island aims to digitize some of its processes to save time and make them more efficient.\n\nCurious about how to incorporate\n\nlocalized data-roadmapping\n\nin USVI?\n\n\nScroll through the ArcGIS storymap below!"
+  },
+  {
+    "objectID": "projects/3_/index.html#permitting-dahboard-mock-up",
+    "href": "projects/3_/index.html#permitting-dahboard-mock-up",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "Permitting Dahboard mock-up",
+    "text": "Permitting Dahboard mock-up\nFor a more in-depth look at the dashboard:"
+  },
+  {
+    "objectID": "projects/3_/index.html#permitting-dahboard-mock-up-1",
+    "href": "projects/3_/index.html#permitting-dahboard-mock-up-1",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "Permitting Dahboard mock-up",
+    "text": "Permitting Dahboard mock-up\nFor a more in-depth look at the dashboard:"
+  },
+  {
+    "objectID": "projects/3_/index.html#opendata-portal-mock-up",
+    "href": "projects/3_/index.html#opendata-portal-mock-up",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "OpenData Portal mock-up",
+    "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up:"
+  },
+  {
+    "objectID": "projects/3_USVI/index.html",
+    "href": "projects/3_USVI/index.html",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "",
+    "text": "Full Project\n  \n  \n    \n     Permitting Dahboard mock-up\n  \n  \n    \n     OpenData Portal mock-up\n  \n  \n    \n     Book"
+  },
+  {
+    "objectID": "projects/3_USVI/index.html#introduction",
+    "href": "projects/3_USVI/index.html#introduction",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "Introduction",
+    "text": "Introduction\nUSVI is under immense climate stress. Following the hurricanes in 2017 and the pandemic in 2020, the continued climate change crisis, it is clear that we need to help the islands become more resilient and healthy. We believe that the way to make this more efficient and faster would be by using data to help plan and manage resources. Through this project we want to answer how data analytics can help St. Thomas with climate and environmental planning? What does a systemic and localized data framework look like for St.Thomas? How can local agencies leverage data to better understand and respond to climate change and help vulnerable communities?\nTo manage this it needs a robust plan and a network of real-time updates to be prepared and resilient. Currently it has over 600+ datasets that contain information around demographics and climatic stressors but these are stored across the internet in various sources. DPNR, the planning agency of the island aims to digitize some of its processes to save time and make them more efficient.\n\nCurious about how to incorporate\n\nlocalized data-roadmapping\n\nin USVI?\n\n\nScroll through the ArcGIS storymap below!"
+  },
+  {
+    "objectID": "projects/3_USVI/index.html#our-approach",
+    "href": "projects/3_USVI/index.html#our-approach",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "Our Approach",
+    "text": "Our Approach"
+  },
+  {
+    "objectID": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
+    "href": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "Permitting Dashboard mock-up",
+    "text": "Permitting Dashboard mock-up\nFor a more in-depth look at the dashboard:"
+  },
+  {
+    "objectID": "projects/3_USVI/index.html#opendata-portal-mock-up",
+    "href": "projects/3_USVI/index.html#opendata-portal-mock-up",
+    "title": "Localized Approach to Data Roadmapping in USVI",
+    "section": "OpenData Portal mock-up",
+    "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up:"
+  },
+  {
+    "objectID": "projects/5_Migration/index.html",
+    "href": "projects/5_Migration/index.html",
+    "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
+    "section": "",
+    "text": "Full Project\n  \n  \n    \n     Permitting Dahboard mock-up\n  \n  \n    \n     OpenData Portal mock-up\n  \n  \n    \n     Book"
+  },
+  {
+    "objectID": "projects/5_Migration/index.html#motivation",
+    "href": "projects/5_Migration/index.html#motivation",
+    "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
+    "section": "Motivation",
+    "text": "Motivation\nThis body of work holds a special place in my heart due to its urgency and significance in today’s world. As an Indian living in the US, my personal experiences have intersected with real individuals and their stories, giving a human face to the vast amount of data and analysis involved. During my travels, I had the privilege of meeting someone who had endured the hardships of seeking asylum and embarking on a journey from Syria to Germany in search of a new life. Hearing about her sacrifices, leaving behind not only her identity but also loved ones and friends, had a profound impact on me so much so that I made it my mission to unravel the causes and consequences of the crisis.\nHence, my journey at Penn has been dedicated towards exploring the pressing issue of the impending refugee crisis, delving into its spatial, statistical, and policy implications. Over the course of nearly a decade, I have been following the international news that has consistently highlighted the narrative of refugees fleeing from the Middle East and Africa, often resorting to unsafe means of migration, resulting in tragic incidents such as boat capsizing and loss of lives. The Missing Migrants Project, conducted by the International Organization for Migration has been the foundation of my work.\nAs a mapper, I am interested in looking at how these incidents are distributed across the globe. Through meticulous mapping techniques, I visualized the most common causes of death among these migrants and investigated whether proximity to country borders influenced the likelihood of drowning. Furthermore, I aimed to tackle questions such as the frequency of incidents in specific regions and the possibility of accurate statistical predictions. The analyst in me, inspired by a spatial stats class, sought to understand this challenge in the hope that policy and planning could help alleviate the fatalities and disappearances.\nSoon enough, it became evident that three regions were bearing the brunt of this crisis: North America, Northern Africa, and the Mediterranean. Drowning emerged as the leading cause of fatalities, with the Mediterranean region experiencing a significant spike, since the onset of the Syrian War. I was curious to further explore the Mediterranean crisis during my Spring semester through a migration class, focusing on the growing tensions between Turkey and Greece—a conflict rooted in centuries of history. This hostility has compounded the refugee pressure on Greece, Cyprus, and Syria. As a policy analyst, I yearned to understand how various measures implemented by Turkey and the European Union could contribute to alleviating this crisis.\nThrough these three projects, I aspire to advance my work in the direction of a policy briefing next semester. My goal is to explore how city planners and analysts can play a pivotal role in addressing these challenges. By understanding the intricate dynamics of the refugee crisis and collaborating with policymakers, I aim to contribute to the development of effective strategies that can make a tangible difference in the lives of those affected. While I understand that no data or analysis can compare to the emotions and the suffering the migrants face, it is my hope that my work and vision will impact policy decisions and make refuge easier.\n\nCurious about how to incorporate\n\nlocalized data-roadmapping\n\nin USVI?\n\n\nScroll through the ArcGIS storymap below!"
+  },
+  {
+    "objectID": "projects/5_Migration/index.html#spatial-impact-and-analysis-of-the-refugee-crisis",
+    "href": "projects/5_Migration/index.html#spatial-impact-and-analysis-of-the-refugee-crisis",
+    "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
+    "section": "Spatial impact and analysis of the refugee crisis",
+    "text": "Spatial impact and analysis of the refugee crisis\n\nUkraine refugees to the world between 2020-2022\nThe map attempts to demonstrate the effects of the Russia-Ukraine war in 2022 on immigration. For my map, I have looked at the increase in Ukrainian migration from 2020 to 2022 and to what extent are countries accommodating Asylum seekers and UNHC Refugees. By using a bi-variate symbology of representation, I have attempted to overlap these two categories and highlighted the most migrated-to countries of the world. It is evident that migration increased significantly in 2022 when the war begun.\n\n\n\n\nRefugees from Ukraine in 2022\n\n\n\n\n\nRefugee movement from the top five sending countries\nAccording to the UNHCR report 2022 , five countries (Afghanistan, Myanmar, South Sudan, Syria, and Venezuela) contribute to more than two thirds of global migration. The map chalks out the movement of Afghan, Burmese, South Sudanese, Syrian and Venezuelan refugees across the globe. Some countries are asylums for all these refugees whereas some of these serve only a few of these countries. The map marks out the most frequented countries of asylum. It is evident that many countries in Europe are home to all these migrants and serve as important asylums.\n\n\n\n\nRefugees from top five sending countries 2022"
+  },
+  {
+    "objectID": "projects/5_Migration/index.html#permitting-dashboard-mock-up",
+    "href": "projects/5_Migration/index.html#permitting-dashboard-mock-up",
+    "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
+    "section": "Permitting Dashboard mock-up",
+    "text": "Permitting Dashboard mock-up\nFor a more in-depth look at the dashboard:"
+  },
+  {
+    "objectID": "projects/5_Migration/index.html#opendata-portal-mock-up",
+    "href": "projects/5_Migration/index.html#opendata-portal-mock-up",
+    "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
+    "section": "OpenData Portal mock-up",
+    "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up:"
   }
 ]

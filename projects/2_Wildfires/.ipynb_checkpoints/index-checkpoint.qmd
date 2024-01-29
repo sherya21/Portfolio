@@ -1,0 +1,163 @@
+---
+title: "Wildfires in US and Oregon"
+author:
+- Shreya Bansal
+- Kathleen Scopis
+
+date: 2023-12-29
+image: wildfires_map.html
+categories:
+  - Python
+  - Data Analysis
+  - GIS
+  - Data Viz
+subtitle: "Looking at Wildfires from 1992-2015 across the US and Oregon"
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: link
+      text: Full Project Website
+      href: https://sherya21.github.io/Oregon-wildfire-MUSA-550/
+
+---
+
+<style>
+  .top-space {
+    padding-top: 50px;
+  }
+</style>
+
+<div class="top-space"></div>
+
+:::{.column-screen-inset-right}
+
+<div style="font-size: 30px; line-height: 1.8; text-align: right;margin-right: 50px;">
+
+Where do most US <span style="color: #FD9416;">wildfires</span> happen? 
+
+</div>
+:::
+
+<div class="top-space"></div>
+
+:::{.column-screen-inset-left}
+<div style="font-size: 30px; line-height: 1.8; text-align: left ;margin-left: 30px ">
+
+Do <span style="color: #5398BE;">weather</span> factors contribute to the probability of fires?
+
+</div>
+:::
+
+
+<style>
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Optional: Adjust the height based on your design */
+  }
+
+  .color-changing-text-2 {
+    display: inline-block;
+    font-size: 40px; 
+    font-weight: bold;
+  }
+</style>
+
+<div class="centered-container" style="font-size: 30px; line-height: 1.8;">
+
+Let's look at <span class="color-changing-text-2" id="playText">WILDFIRES</span> in the US and Oregon
+
+<script>
+  function changeColor() {
+    const playText = document.getElementById('playText');
+    const colors = ['#FDFBC7','#FFE676',  '#FD9416', '#BB591F', '#A13B07']; 
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+      playText.style.color = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }, 500); 
+  }
+
+  document.addEventListener('DOMContentLoaded', changeColor);
+</script>
+
+</div>
+
+<style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    border-radius: 5px;
+    font-size: 12px;
+  }
+
+  .button i {
+    margin-right: 5px;
+  }
+</style>
+
+<div class="button-container">
+  <a class="button" href="https://sherya21.github.io/Oregon-wildfire-MUSA-550/">
+    <i class="bi bi-link"></i> Full Project + Code
+  </a>
+
+</div>
+
+Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.
+
+
+## US Wide Wildfires
+
+### Causes
+<iframe src="sunburst_chart.html" width="80%" height="400px"></iframe>
+
+::: {.grid}
+
+::: {.g-col-8}
+![](us_fire.png){width=6in}
+::: 
+
+::: {.g-col-8}
+![](US-cause.png){width=6in}
+:::
+
+:::
+
+### Dashboard (Acres burnt by State)
+
+The below interactive dahsboard shows total acres burnt between 1992-2015 in each US state. 
+
+<iframe src="wildfires_map.html" width="100%" height="400px"></iframe>
+
+## Oregon's Wildfires
+
+::: {.g-col-8}
+![](or_fire.png){width=6in}
+::: 
+
+::: {.g-col-8}
+![](temp.png){width=6in}
+:::
+### Dashboard (Acres burnt + Weather factors)
+
+The visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed).
+
+<iframe src="wildfires_map_OR.html" width="100%" height="400px"></iframe>
+
+:::{#hero-heading}
+:::

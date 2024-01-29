@@ -1,0 +1,279 @@
+---
+title: "DigiPlay: Interactive Playground"
+author:
+- Shreya Bansal
+- Stephanie Cheng
+- Noah Johnson
+- Gustell Preston
+image: digi-play.gif
+categories:
+  - Urban Sensor
+  - Arduino
+  - C++
+  - GIS
+  - Physical Technology
+  
+subtitle: "A prototype interactive playground installation and business proposal forwarding physical activity, equitable access to play, and STEM education for kids 2-12 across Philadelphia."
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: link
+      text: Full Project + Code
+      href: https://www.sensingthecity.com/digiplay-interactive-playground/
+    - icon: youtube
+      text: Tutorial
+      href: https://youtu.be/dlxA9tKSt9A
+    - icon: file-earmark-slides
+      text: Slideshow
+      href: https://docs.google.com/presentation/d/1bXqZRkV4wXU2qx7BLHlziYEQLyRpM2ULZ16K3bLJTJo/edit?usp=sharing
+---
+<style>
+  .top-space {
+    padding-top: 50px;
+  }
+</style>
+
+<div class="top-space"></div>
+
+:::{.column-screen-inset-right}
+
+<div style="font-size: 30px; line-height: 1.8;">
+
+What if installing interactive activities in playgrounds could address unequal access to play?
+
+</div>
+:::
+
+<div class="top-space"></div>
+
+:::{.column-screen-inset-left}
+<div style="font-size: 30px; line-height: 1.8;">
+
+What if children could build their own interactive playgrounds?
+</div>
+:::
+
+
+<style>
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Optional: Adjust the height based on your design */
+  }
+
+  .color-changing-text {
+    display: inline-block;
+    font-size: 40px; 
+    font-weight: bold;
+  }
+</style>
+
+<div class="centered-container" style="font-size: 40px; line-height: 1.8;">
+
+Introducing Digi- <span class="color-changing-text" id="playText">Play</span>
+
+<script>
+  function changeColor() {
+    const playText = document.getElementById('playText');
+    const colors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58']; 
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+      playText.style.color = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }, 1000); // Change color every second
+  }
+
+  document.addEventListener('DOMContentLoaded', changeColor);
+</script>
+
+</div>
+
+
+
+<style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .button i {
+    margin-right: 5px;
+  }
+</style>
+
+<div class="button-container">
+  <a class="button" href="https://www.sensingthecity.com/digiplay-interactive-playground/" target="_blank">
+    <i class="bi bi-link"></i> Full Project + Code
+  </a>
+
+  <a class="button" href="https://youtu.be/dlxA9tKSt9A" target="_blank">
+    <i class="bi bi-youtube"></i> Tutorial
+  </a>
+
+  <a class="button" href="https://docs.google.com/presentation/d/1bXqZRkV4wXU2qx7BLHlziYEQLyRpM2ULZ16K3bLJTJo/edit?usp=sharing" target="_blank">
+    <i class="bi bi-file-earmark-slides"></i> Slideshow
+  </a>
+</div>
+
+
+:::{.column-page-inset}
+
+{{< video https://www.youtube.com/embed/dlxA9tKSt9A?si=wFGxwEO307pFE3av >}}
+
+:::
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    margin-right: 20px; /* Adjust the left margin as needed */
+  }
+
+  .vertical-line {
+    position: fixed;
+    height: 100%;
+    width: 10px; /* Adjust the width of the line as needed */
+    background-color: #DB4437; /* Adjust the color of the line as needed */
+    left: 95%; /* Adjust the position of the line */
+    transform: translateX(-50%);
+  }
+</style>
+<div class="vertical-line"></div>
+
+
+:::{.column-body}
+
+## The Challenge
+As it stands, many elementary school playgrounds in Philadelphia are either converted parking lots or have aging, inadequate playground equipment. As a result, 25% of the youth in Philadelphia do not get sustained physical activity even once a week. Unfortunately, upgrading and refurbishing playground equipment can cost anywhere between $8,000-$50,000, and there is no substantial line item in the Philadelphia School District’s annual budget to support upgrading playgrounds for children. As a result of this lack of physical activity, many kids in the city are facing health challenges such as obesity. In fact, 1 in 5 of youth in Philadelphia, the majority of whom are black or Hispanic, are overweight or obese. Furthermore, 70% of children in in North Philly are overweight or obese, which is nearly double the obesity and overweight rate for youth in the United States. Better access to play can solve these challenges for kids.
+:::
+
+
+:::{.column-body}
+## The Solution
+DigiPlay works to solve this challenge of inequitable access to play by transforming dull play spacing into interactive ones that encourage movement and serve as another avenue for learning and education in schools. Our solution has three major components, outfitting schools that already had some play equipment with DigiPlay sensors, Creating digital experiences for schools with no play equipment, and layering on educational components of the playground. Additionally, our solution is cost effective for schools to adopt. Creating 1-3 interactive installations on a playground would cost the school ~$300 to install and another ~$100 to maintain on a yearly basis.
+
+:::
+
+::: {.grid}
+::: {.g-col-12}
+![Heart-rate sensor wall module and Musical jungle gym](digi-play.gif){width=12in}
+:::
+::: {.g-col-12}
+![Interactive playfield](bb.gif){width=12in}
+:::
+:::
+
+This is an interactive playground installation made to scale across the city of Philadelphia. DigiPlay aims to create equitable access to play and promote health for kids 2-12 in Philadelphia by turning playgrounds into interactive and immersive experiences. This is achieved by adding a digitally latent layer to playgrounds that strives to improve the play experience, supplement STEM education, and encourage more physical activity for children in Philadelphia schools.
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    margin-right: 20px; /* Adjust the left margin as needed */
+  }
+
+  .vertical-line-2 {
+    position: fixed;
+    height: 80%;
+    width: 8px; /* Adjust the width of the line as needed */
+    background-color: #0F9D58; /* Adjust the color of the line as needed */
+    left: 90%; /* Adjust the position of the line */
+    transform: translateX(-50%);
+  }
+</style>
+<div class="vertical-line-2"></div>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    margin-right: 20px; /* Adjust the left margin as needed */
+  }
+
+  .vertical-line-3 {
+    position: fixed;
+    height: 60%;
+    width: 6px; /* Adjust the width of the line as needed */
+    background-color: #4285F4; /* Adjust the color of the line as needed */
+    left: 87.5%; /* Adjust the position of the line */
+    transform: translateX(-50%);
+  }
+</style>
+<div class="vertical-line-3"></div>
+
+## Site selection
+To facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.
+
+::: {.grid}
+
+::: {.g-col-6}
+![Site selection](map-gif.gif){width=6in}
+:::
+
+::: {.g-col-6}
+![Final pilot site](map.webp){width=6in}
+
+::: 
+:::
+
+## Technical Components
+
+
+1. Interactive Playground
+Light and sound to add a digital layer of fun and excitement to old playground equipment
+
+2. Interactive Lots
+Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids
+
+3. Interact & Learn
+Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active
+
+::: {.column-margin}
+![Heartrate Sensor at play](17_working.mov)
+:::
+
+::: {.grid}
+
+::: {.g-col-6}
+![Musical Jungle Gym Module Diagram](diagram.png){width=6in}
+:::
+
+::: {.g-col-6}
+![Heart Rate Sensing Wall Module Diagram](diagram-2.png){width=6in}
+::: 
+
+::: {.g-col-12}
+![Interactive Playground Module Diagram](diagram-3.png){width=6in}
+:::
+
+:::
+
+
+:::{#hero-heading}
+:::
