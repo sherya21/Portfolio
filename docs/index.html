@@ -64,9 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 <meta name="twitter:title" content="Shreya Bansal">
 <meta name="twitter:description" content="Data Analyst, Urban Planner and Story-teller">
-<meta name="twitter:image" content="https://sherya21.github.io/Portfolio/images/refu.png">
-<meta name="twitter:image-height" content="363">
-<meta name="twitter:image-width" content="363">
+<meta name="twitter:image" content="images/refu.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -448,7 +446,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/sherya21\.github\.io\/Portfolio");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }

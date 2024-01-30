@@ -65,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 <meta name="twitter:title" content="Shreya Bansal - Spatial, statistical and geo-political analysis of the refugee crisis">
 <meta name="twitter:description" content="A look into trends of migration">
-<meta name="twitter:image" content="https://sherya21.github.io/Portfolio/projects/5_Migration/Refugee_movement.gif">
+<meta name="twitter:image" content="Refugee_movement.gif">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -659,7 +659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/sherya21\.github\.io\/Portfolio");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }

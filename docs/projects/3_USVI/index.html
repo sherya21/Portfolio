@@ -66,9 +66,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 <meta name="twitter:title" content="Shreya Bansal - Localized Approach to Data Roadmapping in USVI">
 <meta name="twitter:description" content="A prototype permitting dashboard tool and open data portal for USVI.">
-<meta name="twitter:image" content="https://sherya21.github.io/Portfolio/projects/3_USVI/usvi.png">
-<meta name="twitter:image-height" content="820">
-<meta name="twitter:image-width" content="942">
+<meta name="twitter:image" content="usvi.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -477,7 +475,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/sherya21\.github\.io\/Portfolio");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
