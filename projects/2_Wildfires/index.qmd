@@ -10,8 +10,11 @@ categories:
   - Python
   - Data Analysis
   - GIS
-  - Data Viz
+  - Big Data
+  - Data Visualization
+
 subtitle: "Looking at Wildfires from 1992-2015 across the US and Oregon"
+title-block-banner: true
 about:
   id: hero-heading
   image-width: 0em
@@ -22,16 +25,22 @@ about:
       href: https://sherya21.github.io/Oregon-wildfire-MUSA-550/
 
 ---
-
+:::{#hero-heading}
+:::
+<!--
 <style>
   .top-space {
     padding-top: 50px;
   }
 </style>
 
+
+
 <div class="top-space"></div>
 
-:::{.column-screen-inset-right}
+-->
+
+:::{.column-body-inset-right}
 
 <div style="font-size: 30px; line-height: 1.8; text-align: right;margin-right: 50px;">
 
@@ -40,9 +49,9 @@ Where do most US <span style="color: #FD9416;">wildfires</span> happen?
 </div>
 :::
 
-<div class="top-space"></div>
 
-:::{.column-screen-inset-left}
+
+:::{.column-body-inset-left}
 <div style="font-size: 30px; line-height: 1.8; text-align: left ;margin-left: 30px ">
 
 Do <span style="color: #5398BE;">weather</span> factors contribute to the probability of fires?
@@ -56,7 +65,7 @@ Do <span style="color: #5398BE;">weather</span> factors contribute to the probab
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Optional: Adjust the height based on your design */
+    height: 20vh; /* Optional: Adjust the height based on your design */
   }
 
   .color-changing-text-2 {
@@ -140,7 +149,7 @@ Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland ve
 
 ### Dashboard (Acres burnt by State)
 
-The below interactive dahsboard shows total acres burnt between 1992-2015 in each US state. 
+The below interactive dashboard shows total acres burnt between 1992-2015 in each US state. 
 
 <iframe src="wildfires_map.html" width="100%" height="400px"></iframe>
 
@@ -159,5 +168,3 @@ The visualization below presents an interactive dashboard that locates individua
 
 <iframe src="wildfires_map_OR.html" width="100%" height="400px"></iframe>
 
-:::{#hero-heading}
-:::

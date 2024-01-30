@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Shreya Bansal",
     "section": "",
-    "text": "Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. I took to architecture to try to tackle these issues but soon realized that change had to be made at a larger but solvable scale:the city. Here I am: a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. \n\n\n\n\n\n\n\n\n\nYour hover text here\n\n\n\n\n\n\n\n Back to top"
+    "text": "Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. I took to architecture to try to tackle these issues but soon realized that change had to be made at a larger but solvable scale:the city. Here I am: a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. \nSee some of my work below → \n\n\n\n\n\n\n \n\n What regions of the world experience the highest number of missing migrants/ fatalities?   Refugee crisis analysis \n\n\n\n\n\n\n \n\n Do weather factors contribute to the probability of fires?   Wildfire study \n\n\n\n\n\n\n \n\n How to incorporate localized data-roadmapping in USVI?  USVI Data Roadmap \n\n\n\n\n\n\n \n\n What if installing interactive activities in playgrounds could address unequal access to play?  Digi-Play \n\n\n\n\n\n\n \n\n What if we could repair tracks by forecasting train delays in NJ Transit  On Track \n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html#wildfires",
@@ -116,7 +116,7 @@
     "href": "about.html",
     "title": "Shreya Bansal",
     "section": "",
-    "text": "I am second year Master of City Planning candidate at the Weitzman School of Design, UPenn. A designer, thinker, story-teller, researcher and planner, I bring together my eclectic skills wherever she goes. At Penn, she cofounded the Penn Food Club and the Urban Technologies Club. Her research lies at the intersection of climate change planning and civic technology. Bansal recently completed an internship with the Climate Policy Initiative, working on multilateral bank reform for urban climate finance. Previously, she worked as a program associate with the World Resources Institute in Mumbai. She holds a bachelor’s degree in architecture.\n\n\n Back to top"
+    "text": "I am second year Master of City Planning candidate at the Weitzman School of Design, University of Pennsylvania. A designer, thinker, story-teller, researcher and planner, I bring together my eclectic skills wherever she goes. At Penn, she cofounded the Penn Food Club and the Urban Technologies Club. Her research lies at the intersection of climate change planning and civic technology. Bansal recently completed an internship with the Climate Policy Initiative, working on multilateral bank reform for urban climate finance. Previously, she worked as a program associate with the World Resources Institute in Mumbai. She holds a bachelor’s degree in architecture.\n\n\n Back to top"
   },
   {
     "objectID": "analysis/Dashboard.html",
@@ -270,7 +270,7 @@
     "href": "projects/1_DigiPlay/index.html",
     "title": "DigiPlay: Interactive Playground",
     "section": "",
-    "text": "This is an interactive playground installation made to scale across the city of Philadelphia. DigiPlay aims to create equitable access to play and promote health for kids 2-12 in Philadelphia by turning playgrounds into interactive and immersive experiences. This is achieved by adding a digitally latent layer to playgrounds that strives to improve the play experience, supplement STEM education, and encourage more physical activity for children in Philadelphia schools."
+    "text": "Full Project + Code\n  \n  \n    \n     Tutorial\n  \n  \n    \n     Slideshow\nThis is an interactive playground installation made to scale across the city of Philadelphia. DigiPlay aims to create equitable access to play and promote health for kids 2-12 in Philadelphia by turning playgrounds into interactive and immersive experiences. This is achieved by adding a digitally latent layer to playgrounds that strives to improve the play experience, supplement STEM education, and encourage more physical activity for children in Philadelphia schools."
   },
   {
     "objectID": "projects/1_DigiPlay/index.html#the-challenge",
@@ -291,7 +291,7 @@
     "href": "projects/1_DigiPlay/index.html#technical-components",
     "title": "DigiPlay: Interactive Playground",
     "section": "Technical Components",
-    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\nInteract & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\n\nVideo\nHeartrate Sensor at play\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram\n\n\n\n\n\n  \n    \n       \n  \n    \n     Full Project + Code\n  \n  \n    \n     Tutorial\n  \n  \n    \n     Slideshow"
+    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\nInteract & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\n\nVideo\nHeartrate Sensor at play\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram"
   },
   {
     "objectID": "projects/1_DigiPlay/index.html#site-selection",
@@ -333,7 +333,7 @@
     "href": "projects/2_Wildfires/index.html",
     "title": "Wildfires in US and Oregon",
     "section": "",
-    "text": "Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State."
+    "text": "Full Project Website\nWildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State."
   },
   {
     "objectID": "projects/2_Wildfires/index.html#clean-data",
@@ -410,14 +410,14 @@
     "href": "projects/2_Wildfires/index.html#oregons-wildfires",
     "title": "Wildfires in US and Oregon",
     "section": "Oregon’s Wildfires",
-    "text": "Oregon’s Wildfires\n\n\n\n\n\n\n\nDashboard (Acres burnt + Weather factors)\nThe visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed).\n\n\n\n  \n    \n       \n  \n    \n     Full Project Website"
+    "text": "Oregon’s Wildfires\n\n\n\n\n\n\n\nDashboard (Acres burnt + Weather factors)\nThe visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed)."
   },
   {
     "objectID": "projects/2_Wildfires/index.html#us-wide-wildfires",
     "href": "projects/2_Wildfires/index.html#us-wide-wildfires",
     "title": "Wildfires in US and Oregon",
     "section": "US Wide Wildfires",
-    "text": "US Wide Wildfires\n\nCauses\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard (Acres burnt by State)\nThe below interactive dahsboard shows total acres burnt between 1992-2015 in each US state."
+    "text": "US Wide Wildfires\n\nCauses\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard (Acres burnt by State)\nThe below interactive dashboard shows total acres burnt between 1992-2015 in each US state."
   },
   {
     "objectID": "projects/3_/index.html#project",
@@ -494,7 +494,7 @@
     "href": "projects/5_Migration/index.html",
     "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
     "section": "",
-    "text": "What regions of the world experience the highest number of missing migrants/ fatalities?\nSpatial analysis Statistical analysis  Geo-political analysis"
+    "text": "Storyboard on ArcGIS\nSpatial analysis Statistical analysis  Geo-political analysis"
   },
   {
     "objectID": "projects/5_Migration/index.html#motivation",
@@ -564,14 +564,14 @@
     "href": "projects/5_Migration/index.html#geo",
     "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
     "section": "Effect of Turkey-Greece-Cyprus conflict on migration",
-    "text": "Effect of Turkey-Greece-Cyprus conflict on migration\nHow has the ongoing migrant crisis in the Mediterranean been affected by the geopolitical conflict between Turkey and Greece?\n\n\n\n\n\n  \n    \n       \n  \n    \n     Storyboard on ArcGIS"
+    "text": "Effect of Turkey-Greece-Cyprus conflict on migration\nHow has the ongoing migrant crisis in the Mediterranean been affected by the geopolitical conflict between Turkey and Greece?"
   },
   {
     "objectID": "projects/4_OnTrack/index.html",
     "href": "projects/4_OnTrack/index.html",
     "title": "On Track",
     "section": "",
-    "text": "What regions of the world experience the highest number of missing migrants/ fatalities?\nSpatial analysis Statistical analysis  Geo-political analysis"
+    "text": "Back to top"
   },
   {
     "objectID": "projects/4_OnTrack/index.html#motivation",

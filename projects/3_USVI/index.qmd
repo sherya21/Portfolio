@@ -9,9 +9,10 @@ categories:
   - GIS
   - Product Management
   - Data Roadmapping
-  - InDesign
-  - Photoshop
-
+  - Adobe Suite
+  - Client Management
+  
+title-block-banner: true
 subtitle: "A prototype permitting dashboard tool and open data portal for USVI."
 about:
   id: hero-heading
@@ -30,7 +31,7 @@ about:
     - icon: book
       text: Book
       href: https://usvi-open-data-portal-upenn.hub.arcgis.com/
-
+  
 ---
 
 :::{#hero-heading}
@@ -53,7 +54,7 @@ Scroll through the ArcGIS storymap below!
 
 
 ## Our Approach
-:::{.column-screen-inset}
+:::{.column-body-outset}
 <iframe src="https://storymaps.arcgis.com/stories/d0d5859c1f704646a615d2ec74280769" width="100%" height="400px"></iframe>
 :::
 

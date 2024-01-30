@@ -24,9 +24,8 @@ website:
       issue-term: title
   navbar:
     title: false
-    logo: images/image-1.gif
     height: 1inch
-    background: "rgba(169, 63, 185, 0.5)"
+    background: "rgba(131, 188, 169, 0.5)"
     foreground: "#F3F7F0"
     collapse: true
     collapse-below: "lg"
@@ -40,16 +39,17 @@ website:
       - text: Portfolio
         aria-label: "Portfolio"
         menu:
-         - text: Digi-Play
-           href: projects/1_DigiPlay/
+         - text: Refugee Crisis
+           href: projects/5_Migration/
          - text: Wildfires
            href: projects/2_Wildfires/
          - text: USVI Data Roadmapping 
            href: projects/3_USVI/
+         - text: Digi-Play
+           href: projects/1_DigiPlay/
          - text: OnTrack
            href: projects/4_OnTrack/
-         - text: Refugee Crisis
-           href: projects/5_Migration/
+         
       - text: About
         aria-label: "About"
         href: about.qmd
@@ -63,7 +63,7 @@ website:
           
 format:
   html:
-    highlight-style: monokai
+    highlight-style: solarized
     theme: darkly
     css: styles.css
     code-copy: true
