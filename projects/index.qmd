@@ -1,0 +1,20 @@
+---
+title: "Projects"
+subtitle: "Selected projects from 2016-2024"
+format: 
+  html: 
+    page-layout: full
+listing:
+  - id: port
+    contents: "projects/**/index.qmd"
+    type: grid
+    fields: [image, title]
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: [title, date, categories]
+    page-size: 3
+    image-align: left
+    image-height: 100%
+page-layout: full
+toc: false
+---

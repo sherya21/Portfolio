@@ -5,11 +5,11 @@ project:
     port: 3333
 
 website:
-  title: "Shreya Bansal: Selected Works"
+  title: "Shreya Bansal"
   site-url: "https://sherya21.github.io/portfolio" 
   repo-url: "https://sherya21.github.com/portfolio"
   repo-actions: [source]
-  description: "Data Analyst and Urban Planner"
+  description: "Data Analyst, Urban Planner and Story-teller"
   page-navigation: true
   back-to-top-navigation: true
   twitter-card: true
@@ -22,16 +22,48 @@ website:
       label: utterances
       theme: body-light
       issue-term: title
-      
+  navbar:
+    title: false
+    logo: images/image-1.gif
+    height: 1inch
+    background: "rgba(169, 63, 185, 0.5)"
+    foreground: "#F3F7F0"
+    collapse: true
+    collapse-below: "lg"
+    tools:
+    - icon: linkedin
+      href: https://linkedin.com/in/shreya21bansal
+    left:
+      - text: Home
+        file: index.qmd
+    right:
+      - text: Portfolio
+        aria-label: "Portfolio"
+        menu:
+         - text: Digi-Play
+           href: projects/1_DigiPlay/
+         - text: Wildfires
+           href: projects/2_Wildfires/
+         - text: USVI Data Roadmapping 
+           href: projects/3_USVI/
+         - text: OnTrack
+           href: projects/4_OnTrack/
+         - text: Refugee Crisis
+           href: projects/5_Migration/
+      - text: About
+        aria-label: "About"
+        href: about.qmd
+      - text: Email
+        href: mailto:bansal21shreya@gmail.com
 
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
-    center: "[About me](/about.qmd)"
+    center: "[Get in Touch](mailto:bansal21shreya@gmail.com)"
     left: "&copy; CC-Shreya Bansal 2024"
           
 format:
   html:
-    highlight-style: solarized
+    highlight-style: monokai
     theme: darkly
     css: styles.css
     code-copy: true

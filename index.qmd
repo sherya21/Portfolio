@@ -1,38 +1,37 @@
 ---
 title: "Shreya Bansal"
-subtitle: "Data Analyst and Urban Thinker"
+subtitle: "Data Analyst, Urban Planner and Story-teller"
 format: 
   html: 
     page-layout: full
-listing:
-  - id: portfolio
-    contents: "projects/**/index.qmd"
-    type: grid
-    fields: [image]
-    sort: "date desc"
-    sort-ui: false
-    filter-ui: [title, date, categories]
-    page-size: 4
-    image-align: right
-    image-height: 4inch
-    categories: cloud
-    
-  - id: categories
-    contents: "projects/**/index.qmd"
-    type: grid
-    fields: [categories]
-    sort: "date desc"
-    sort-ui: false
-    filter-ui: [title, date, categories]
-    page-size: 4
-    categories: cloud
+
+page-layout: full
+toc: false
+
 ---
 
-## I'm Shreya. I'm a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. But most of all, I wish to keep learning and growing. 
+<div style="padding: 50px;">
 
-## Which identity of me are you hoping to meet today?
-::: {#categories.column-body-outset-left}
+</div>
+
+
+<span style="font-size: 25px;"> Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. I took to architecture to try to tackle these issues but soon realized that change had to be made at a larger but solvable scale:the city. Here I am: a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. </span>
+
+<span style="font-size: 30px;"></span>
+
+
+<div style="padding: 50px;">
+
+</div>
+
+:::{.grid}
+:::{.g-col-6}
+
+<div class="image-container">
+  <img src="images/Shreya_headshot.jpg" alt="Shreya's Headshot" class="hover-image" height= "500px">
+  <div class="hover-text">Your hover text here</div>
+</div>
+
+
 :::
-
-::: {#portfolio.column-screen-right}
 :::

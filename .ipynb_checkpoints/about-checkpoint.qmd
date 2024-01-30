@@ -1,23 +1,39 @@
 ---
-title: "About me"
+title: "Shreya Bansal"
+subtitle: "Data Analyst, Urban Planner and Story-teller"
+comments: false
+image: images/Shreya_headshot.jpg
+about:
+  template: solana
+  image-width: 20em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:bansal21shreya@gmail.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/sherya21
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/shreya21bansal/
 ---
 
-<!-- Use a grid -->
-::: {.grid}
 
-<!-- Left column has a width of 4/12 and shows a picture of me -->
-::: {.g-col-4}
-![](images/Shreya_headshot.jpg){width=4in}
-:::
 
-<!-- Text gets a column with width 8/12 -->
-::: {.g-col-8}
 
-Shreya Bansal is a second year Master of City Planning candidate at the Weitzman School of Design, UPenn. A designer, thinker, advocate, researcher and planner, Shreya brings together her eclectic skills wherever she goes. 
 
-::: 
+<br>
 
-:::
+
+
+
+
+
+
+
+
+</br>
+I am second year Master of City Planning candidate at the [Weitzman School of Design](https://www.design.upenn.edu/graduate-admissions/people/shreya-bansal), UPenn. A designer, thinker, story-teller, researcher and planner, I bring together my eclectic skills wherever she goes. At Penn, she cofounded the [Penn Food Club](https://www.instagram.com/pennfoodclub/) and the [Urban Technologies Club](https://www.instagram.com/urbantechclub_penn/). Her research lies at the intersection of climate change planning and civic technology. Bansal recently completed an internship with the [Climate Policy Initiative](https://www.climatepolicyinitiative.org/), working on multilateral bank reform for urban climate finance. Previously, she worked as a program associate with the [World Resources Institute](https://wri-india.org/) in Mumbai. She holds a bachelor's degree in architecture.
 
 
 
