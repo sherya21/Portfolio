@@ -3,11 +3,10 @@ project:
   output-dir: docs
   preview:
     port: 3333
-
 website:
   title: "Shreya Bansal"
   site-url: "https://sherya21.github.io/portfolio" 
-  repo-url: https://github.com/sherya21/Portfolio
+  repo-url: https://sherya21.github.io/portfolio
   repo-actions: [source]
   description: "Data Analyst, Urban Planner and Story-teller"
   page-navigation: true
@@ -18,7 +17,7 @@ website:
     type: overlay
   comments: 
     utterances: 
-      repo: sherya21/sherya21.github.com/portfolio
+      repo: sherya21/sherya21.github.io/portfolio
       label: utterances
       theme: body-light
       issue-term: title
