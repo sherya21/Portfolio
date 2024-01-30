@@ -54,18 +54,22 @@ Scroll through the ArcGIS storymap below!
 
 
 ## Our Approach
+
+See below for an interactive ArcGIS Storymap &darr;
+
 :::{.column-body-outset}
 <iframe src="https://storymaps.arcgis.com/stories/d0d5859c1f704646a615d2ec74280769" width="100%" height="400px"></iframe>
 :::
 
 
 ## Permitting Dashboard mock-up
-For a more in-depth look at the dashboard:
+For a more in-depth look at the dashboard &darr;
 
 <iframe src="https://upenn.maps.arcgis.com/apps/dashboards/e6d0704afffc48a29f15d86ffbe70452" width="100%" height="400px"></iframe>
 
 
 ## OpenData Portal mock-up
-For a more in-depth look at the open data portal mock-up:
+
+For a more in-depth look at the open data portal mock-up &darr;
 
 <iframe src="https://usvi-open-data-portal-upenn.hub.arcgis.com/" width="100%" height="400px"></iframe>

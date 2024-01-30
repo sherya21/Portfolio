@@ -11,7 +11,6 @@ categories:
   - Data Analysis
   - Data Visualization
 title-block-banner: true
-subtitle: "A look into trends of migration"
 about:
   id: hero-heading
   image-width: 0em
@@ -23,33 +22,6 @@ about:
 
 ---
 :::{#hero-heading}
-:::
-
-:::{.column-body-inset-right}
-
-<div style="font-size: 30px; line-height: 1.8; text-align: right;margin-right: 50px;">
-
-What regions of the world experience the highest number of missing migrants/ fatalities?
-
-</div>
-:::
-
-:::{.column-body-inset-left}
-
-<div style="font-size: 30px; line-height: 1.8; text-align: left;margin-left: 50px;">
-
-How will this trend be shaped in the future?
-
-</div>
-:::
-
-:::{.column-body-inset-right}
-
-<div style="font-size: 40px; line-height: 1.8; text-align: right;margin-right: 50px;">
-
-How can we help?
-
-</div>
 :::
 
 <style>
@@ -67,7 +39,7 @@ How can we help?
   }
 </style>
 
-<div class="centered-container" style="font-size: 40px; line-height: 1.5;">
+<div class="centered-container" style="font-size: 40px; line-height: 1.5; text-align: center;">
 
 Spatial, statistical and geo-political analysis of the <span class="color-changing-text" id="migText">refugee crisis</span>
 
@@ -89,6 +61,32 @@ Spatial, statistical and geo-political analysis of the <span class="color-changi
 
 </div>
 
+:::{.column-body-inset-right}
+
+<div style="font-size: 20px; line-height: 1.8; text-align: center;">
+
+What regions of the world experience the highest number of missing migrants/ fatalities?
+
+</div>
+:::
+
+:::{.column-body-inset-left}
+
+<div style="font-size: 20px; line-height: 1.8; text-align: center">
+
+How will this trend be shaped in the future?
+
+</div>
+:::
+
+:::{.column-body-inset-right}
+
+<div style="font-size: 30px; line-height: 1.8; text-align: center;">
+
+How can we help?
+
+</div>
+:::
 
 <style>
   .quick-link-button {
@@ -104,24 +102,9 @@ Spatial, statistical and geo-political analysis of the <span class="color-changi
   }
 </style>
 
-
-<a class="quick-link-button" href="#spatial">Spatial analysis</a>  <a class="quick-link-button" href="#stat">Statistical analysis </a> <a class="quick-link-button" href="#geo">Geo-political analysis </a>
-
-## Motivation
-
-This body of work holds a special place in my heart due to its urgency and significance in today’s world. As an Indian living in the US, my personal experiences have intersected with real individuals and their stories, giving a human face to the vast amount of data and analysis involved. During my travels, I had the privilege of meeting someone who had endured the hardships of seeking asylum and embarking on a journey from Syria to Germany in search of a new life. Hearing about her sacrifices, leaving behind not only her identity but also loved ones and friends, had a profound impact on me so much so that I made it my mission to unravel the causes and consequences of the crisis.
-
-Hence, my journey at Penn has been dedicated towards exploring the pressing issue of the impending refugee crisis, delving into its spatial, statistical, and policy implications. Over the course of nearly a decade, I have been following the international news that has consistently highlighted the narrative of refugees fleeing from the Middle East and Africa, often resorting to unsafe means of migration, resulting in tragic incidents such as boat capsizing and loss of lives. [The Missing Migrants Project](https://missingmigrants.iom.int/), conducted by the [International Organization for Migration](https://www.iom.int/) has been the foundation of my work.
-
-As a mapper, I am interested in looking at how these incidents are distributed across the globe. Through meticulous mapping techniques, I visualized the most common causes of death among these migrants and investigated whether proximity to country borders influenced the likelihood of drowning. Furthermore, I aimed to tackle questions such as the frequency of incidents in specific regions and the possibility of accurate statistical predictions. The analyst in me, inspired by a spatial stats class, sought to understand this challenge in the hope that policy and planning could help alleviate the fatalities and disappearances.
-
-Soon enough, it became evident that three regions were bearing the brunt of this crisis: North America, Northern Africa, and the Mediterranean. Drowning emerged as the leading cause of fatalities, with the Mediterranean region experiencing a significant spike, since the onset of the Syrian War. I was curious to further explore the Mediterranean crisis during my Spring semester through a migration class, focusing on the growing tensions between Turkey and Greece—a conflict rooted in centuries of history. This hostility has compounded the refugee pressure on Greece, Cyprus, and Syria. As a policy analyst, I yearned to understand how various measures implemented by Turkey and the European Union could contribute to alleviating this crisis.
-
-Through these three projects, I aspire to advance my work in the direction of a policy briefing next semester. My goal is to explore how city planners and analysts can play a pivotal role in addressing these challenges. By understanding the intricate dynamics of the refugee crisis and collaborating with policymakers, I aim to contribute to the development of effective strategies that can make a tangible difference in the lives of those affected. While I understand that no data or analysis can compare to the emotions and the suffering the migrants face, it is my hope that my work and vision will impact policy decisions and make refuge easier.
-
+<a class="quick-link-button" href="#spatial">Spatial analysis &darr;</a>  <a class="quick-link-button" href="#stat">Statistical analysis &darr; </a> <a class="quick-link-button" href="#geo">Geo-political analysis &darr; </a>
 
 ## Spatial impact and analysis of the refugee crisis {#spatial}
-
 ### Ukraine refugees to the world between 2020-2022
 The map attempts to demonstrate the effects of the Russia-Ukraine war in 2022 on immigration. For my map, I have looked at the increase in Ukrainian migration from 2020 to 2022 and to what extent are countries accommodating Asylum seekers and UNHC Refugees. The data for Ukrainian refugees for 2020-2022 was drawn from [UNHCR’s data website](https://www.unhcr.org/data) and [shapefiles](https://hub.arcgis.com/datasets/CESJ::world-countries/about) and point data on countries were extracted from ArcGIS website.  By using a bi-variate symbology of representation, I have attempted to overlap these two categories and highlighted the most migrated-to countries of the world. It is evident that migration increased significantly in 2022 when the war begun.
 
@@ -266,7 +249,30 @@ If the <span style="color: #547FC9;font-size: 20px; font-weight: bold;">year of 
 
 <span style="font-size: 20px;">How has the ongoing <span style="color: #547FC9;font-size: 20px; font-weight: bold;">migrant crisis in the Mediterranean</span> been affected by the <span style="color: #fec00f;font-size: 20px; font-weight: bold;">geopolitical conflict between Turkey and Greece?</span></span>
 
+Scroll below for an interactive ArcGIS Storymap &darr;
+
+
 :::{.column-screen-inset}
+<div class="image-container hoverimg">
+<a href="https://storymaps.arcgis.com/stories/9b08b7593b564221919a53dcc06f3031">
 <iframe src="https://storymaps.arcgis.com/stories/9b08b7593b564221919a53dcc06f3031" width="100%" height="400px"></iframe>
+<div class="hover-text"><br> What regions of the world experience the highest number of missing migrants/ fatalities? </br> 
+<span style="color: #fec00f;font-size: 20px; font-weight: bold;"> Refugee crisis analysis </span>
+  </div>
+  </a>
+</div>
 :::
+
+## Motivation
+
+This body of work holds a special place in my heart due to its urgency and significance in today’s world. As an Indian living in the US, my personal experiences have intersected with real individuals and their stories, giving a human face to the vast amount of data and analysis involved. During my travels, I had the privilege of meeting someone who had endured the hardships of seeking asylum and embarking on a journey from Syria to Germany in search of a new life. Hearing about her sacrifices, leaving behind not only her identity but also loved ones and friends, had a profound impact on me so much so that I made it my mission to unravel the causes and consequences of the crisis.
+
+Hence, my journey at Penn has been dedicated towards exploring the pressing issue of the impending refugee crisis, delving into its spatial, statistical, and policy implications. Over the course of nearly a decade, I have been following the international news that has consistently highlighted the narrative of refugees fleeing from the Middle East and Africa, often resorting to unsafe means of migration, resulting in tragic incidents such as boat capsizing and loss of lives. [The Missing Migrants Project](https://missingmigrants.iom.int/), conducted by the [International Organization for Migration](https://www.iom.int/) has been the foundation of my work.
+
+As a mapper, I am interested in looking at how these incidents are distributed across the globe. Through meticulous mapping techniques, I visualized the most common causes of death among these migrants and investigated whether proximity to country borders influenced the likelihood of drowning. Furthermore, I aimed to tackle questions such as the frequency of incidents in specific regions and the possibility of accurate statistical predictions. The analyst in me, inspired by a spatial stats class, sought to understand this challenge in the hope that policy and planning could help alleviate the fatalities and disappearances.
+
+Soon enough, it became evident that three regions were bearing the brunt of this crisis: North America, Northern Africa, and the Mediterranean. Drowning emerged as the leading cause of fatalities, with the Mediterranean region experiencing a significant spike, since the onset of the Syrian War. I was curious to further explore the Mediterranean crisis during my Spring semester through a migration class, focusing on the growing tensions between Turkey and Greece—a conflict rooted in centuries of history. This hostility has compounded the refugee pressure on Greece, Cyprus, and Syria. As a policy analyst, I yearned to understand how various measures implemented by Turkey and the European Union could contribute to alleviating this crisis.
+
+Through these three projects, I aspire to advance my work in the direction of a policy briefing next semester. My goal is to explore how city planners and analysts can play a pivotal role in addressing these challenges. By understanding the intricate dynamics of the refugee crisis and collaborating with policymakers, I aim to contribute to the development of effective strategies that can make a tangible difference in the lives of those affected. While I understand that no data or analysis can compare to the emotions and the suffering the migrants face, it is my hope that my work and vision will impact policy decisions and make refuge easier.
+
 

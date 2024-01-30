@@ -11,28 +11,28 @@
     "href": "projects/4_OnTrack/index.html",
     "title": "On Track",
     "section": "",
-    "text": "Back to top"
+    "text": "See below for an interactive HTML ↓\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "projects/2_Wildfires/index.html",
     "href": "projects/2_Wildfires/index.html",
     "title": "Wildfires in US and Oregon",
     "section": "",
-    "text": "Full Project Website\nWildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.This project is inspired by Ali Ahmadalipour’s work."
+    "text": "Let’s look at WILDFIRES in the US and Oregon\nWildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.This project is inspired by Ali Ahmadalipour’s work."
   },
   {
     "objectID": "projects/2_Wildfires/index.html#us-wide-wildfires",
     "href": "projects/2_Wildfires/index.html#us-wide-wildfires",
     "title": "Wildfires in US and Oregon",
     "section": "US Wide Wildfires",
-    "text": "US Wide Wildfires\n\nCauses\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard (Acres burnt by State)\nThe below interactive dashboard shows total acres burnt between 1992-2015 in each US state."
+    "text": "US Wide Wildfires\n\nCauses\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard (Acres burnt by State)\nThe below interactive dashboard shows total acres burnt between 1992-2015 in each US state. See below for an interactive Dashboard ↓"
   },
   {
     "objectID": "projects/2_Wildfires/index.html#oregons-wildfires",
     "href": "projects/2_Wildfires/index.html#oregons-wildfires",
     "title": "Wildfires in US and Oregon",
     "section": "Oregon’s Wildfires",
-    "text": "Oregon’s Wildfires\n\n\n\n\n\n\n\nDashboard (Acres burnt + Weather factors)\nThe visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed)."
+    "text": "Oregon’s Wildfires\n\n\n\n\n\n\n\nDashboard (Acres burnt + Weather factors)\nThe visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed).\nSee below for an interactive Dashboard ↓"
   },
   {
     "objectID": "index.html",
@@ -102,28 +102,28 @@
     "href": "projects/3_USVI/index.html#our-approach",
     "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "Our Approach",
-    "text": "Our Approach"
+    "text": "Our Approach\nSee below for an interactive ArcGIS Storymap ↓"
   },
   {
     "objectID": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
     "href": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
     "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "Permitting Dashboard mock-up",
-    "text": "Permitting Dashboard mock-up\nFor a more in-depth look at the dashboard:"
+    "text": "Permitting Dashboard mock-up\nFor a more in-depth look at the dashboard ↓"
   },
   {
     "objectID": "projects/3_USVI/index.html#opendata-portal-mock-up",
     "href": "projects/3_USVI/index.html#opendata-portal-mock-up",
     "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "OpenData Portal mock-up",
-    "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up:"
+    "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up ↓"
   },
   {
     "objectID": "projects/5_Migration/index.html",
     "href": "projects/5_Migration/index.html",
     "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
     "section": "",
-    "text": "Storyboard on ArcGIS\nSpatial analysis Statistical analysis  Geo-political analysis"
+    "text": "Storyboard on ArcGIS\nSpatial analysis ↓ Statistical analysis ↓  Geo-political analysis ↓"
   },
   {
     "objectID": "projects/5_Migration/index.html#motivation",
@@ -151,6 +151,6 @@
     "href": "projects/5_Migration/index.html#geo",
     "title": "Spatial, statistical and geo-political analysis of the refugee crisis",
     "section": "Effect of Turkey-Greece-Cyprus conflict on migration",
-    "text": "Effect of Turkey-Greece-Cyprus conflict on migration\nHow has the ongoing migrant crisis in the Mediterranean been affected by the geopolitical conflict between Turkey and Greece?"
+    "text": "Effect of Turkey-Greece-Cyprus conflict on migration\nHow has the ongoing migrant crisis in the Mediterranean been affected by the geopolitical conflict between Turkey and Greece?\nScroll below for an interactive ArcGIS Storymap ↓\n\n\n \n\n What regions of the world experience the highest number of missing migrants/ fatalities?   Refugee crisis analysis"
   }
 ]
