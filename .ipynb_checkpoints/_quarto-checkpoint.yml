@@ -7,7 +7,7 @@ project:
 website:
   title: "Shreya Bansal"
   site-url: "https://sherya21.github.io/portfolio" 
-  repo-url: "https://sherya21.github.com/portfolio"
+  repo-url: https://sherya21.github.com/portfolio
   repo-actions: [source]
   description: "Data Analyst, Urban Planner and Story-teller"
   page-navigation: true
