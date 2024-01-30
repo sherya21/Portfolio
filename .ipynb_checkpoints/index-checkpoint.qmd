@@ -68,7 +68,7 @@ toc: false
 
 <div class="image-container hoverimg">
 <a href="/projects/1_DigiPlay/index.qmd">
-![](images/digi.png)
+![](images/play.png)
 <div class="hover-text"><br> What if installing interactive activities in playgrounds could address unequal access to play?</br> 
 <span style="color: #fec00f;font-size: 20px; font-weight: bold;"> Digi-Play </span>
   </div>

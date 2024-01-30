@@ -10,7 +10,7 @@ categories:
   - Statistics
   - Data Analysis
   - Data Visualization
-title-block-banner: refu.png
+title-block-banner: true
 subtitle: "A look into trends of migration"
 about:
   id: hero-heading

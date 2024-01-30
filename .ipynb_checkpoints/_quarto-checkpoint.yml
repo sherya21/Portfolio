@@ -18,7 +18,7 @@ website:
     type: overlay
   comments: 
     utterances: 
-      repo: sherya21/sherya21.github.io/portfolio
+      repo: sherya21/sherya21.github.com/portfolio
       label: utterances
       theme: body-light
       issue-term: title

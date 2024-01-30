@@ -127,7 +127,7 @@ Let's look at <span class="color-changing-text-2" id="playText">WILDFIRES</span>
 
 </div>
 
-Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.
+Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.This project is inspired by [Ali Ahmadalipour's work](https://www.linkedin.com/pulse/ai-climate-data-predicting-fire-frequency-california-ali-ahmadalipour/). 
 
 
 ## US Wide Wildfires
