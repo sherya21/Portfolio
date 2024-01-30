@@ -5,6 +5,9 @@ project:
     port: 3333
 website:
   title: "Shreya Bansal"
+  site-url: "https://sherya21.github.io/portfolio" 
+  repo-url: https://sherya21.github.io/portfolio
+  repo-actions: [source]
   description: "Data Analyst, Urban Planner and Story-teller"
   page-navigation: true
   back-to-top-navigation: true
