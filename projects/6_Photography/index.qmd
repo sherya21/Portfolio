@@ -1,0 +1,26 @@
+---
+title: "Personal crafthouse"
+author:
+- Shreya Bansal
+date: 2023-05-02
+image: Refugee_movement.gif
+categories:
+  - GIS
+  - R
+  - Statistics
+  - Data Analysis
+  - Data Visualization
+title-block-banner: true
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: link
+      text: Storyboard on ArcGIS
+      href: https://storymaps.arcgis.com/stories/9b08b7593b564221919a53dcc06f3031
+
+---
+
+Under craft.
+Coming soon!

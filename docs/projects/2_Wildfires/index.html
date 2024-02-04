@@ -65,7 +65,6 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../../styles.css">
 <meta name="twitter:title" content="Shreya Bansal - Wildfires in US and Oregon">
-<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://sherya21.github.io/portfolio/projects/2_Wildfires/wildfires_map.html">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -196,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh; /* Optional: Adjust the height based on your design */
+    height: 15vh; /* Optional: Adjust the height based on your design */
   }
   .color-changing-text-2 {
     display: inline-block;
@@ -232,6 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div style="font-size: 20px; line-height: 1.8; text-align: center; ">
 <p>Do <span style="color: #5398BE;">weather</span> factors contribute to the probability of fires?</p>
+<!--
 </div>
 <style>
   .button-container {
@@ -254,15 +254,21 @@ ul.task-list li input[type="checkbox"] {
   }
 </style>
 <div class="button-container">
-<p><a class="button" href="https://sherya21.github.io/Oregon-wildfire-MUSA-550/"> <i class="bi bi-link"></i> Full Project + Code </a></p>
+  <a class="button" href="https://sherya21.github.io/Oregon-wildfire-MUSA-550/">
+    <i class="bi bi-link"></i> Full Project + Code
+  </a>
 </div>
-<p>Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.This project is inspired by <a href="https://www.linkedin.com/pulse/ai-climate-data-predicting-fire-frequency-california-ali-ahmadalipour/">Ali Ahmadalipour’s work</a>.</p>
+-->
+<p>Wildfires, a phenomenon where an uncontrolled fire that burns in the wildland vegetation, has been a growing concern in the US in recent years. For our final project, we will be using machine learning techniques to explore instances of wildfires across Oregon, in the United States. As wildfires become increasingly common, it is crucial to equip policy-makers and first responders with tools to help better predict areas that are most likely to set ablaze across the State.The data was taken from <a href="https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires">Kaggle</a>. This project is inspired by <a href="https://www.linkedin.com/pulse/ai-climate-data-predicting-fire-frequency-california-ali-ahmadalipour/">Ali Ahmadalipour’s work</a>.</p>
 <section id="us-wide-wildfires" class="level2">
 <h2 data-anchor-id="us-wide-wildfires">US Wide Wildfires</h2>
 <section id="causes" class="level3">
 <h3 data-anchor-id="causes">Causes</h3>
 <iframe src="sunburst_chart.html" width="80%" height="400px">
 </iframe>
+<p>We observe trends in common causes of wildfires by year. To interact with the visualization, select a year from the center of the wheel. The information becomes increasingly detailed as the wheel is explored outwards.</p>
+<p>The visualization below shows spread of recorded wildfires across the year, with the darker colors indicating more instances of wildfire. Across the last 24 years, late spring and late summer saw the most burning, with a period of increased fires during the spring of 2006. On average, less than 8,000 fires burn per month across the US - however, certain months tend to tell another story, where more than 16,000 burned in the same time period. There appears to be a slight dip in fires during the early summer months of May and June.</p>
+<p>Next, we observe which activities are the most likely causes of wildfires across the country depending on the time of year. According to the visualization above, arson, debris burning, and other mixed causes are commonplace throughout the year, while other common reasons tend to spike in specific seasons. For example, lightning strikes and equipment use are common causes during the summertime, when summer storms bring seasonal spikes in thundering clouds, and when people are more likely to get outside and run types of equipment that have the ability to catch ablaze. An interesting observation lies in the missing and undefined category, which is most likely to be recorded in the first half of the year.</p>
 <div class="grid">
 <div class="g-col-8">
 <p><img src="us_fire.png" class="img-fluid" style="width:6in"></p>
@@ -281,6 +287,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="oregons-wildfires" class="level2">
 <h2 data-anchor-id="oregons-wildfires">Oregon’s Wildfires</h2>
+<p>When discussing wildfires in the US, California is usually front and center of the narrative. However, many other states that experience similar rates of burning, yet are often left off the table. We’d like to change that narrative, focusing on Oregon’s recent wildfire trends. To complete this study, we have chosen to dig into observations taken between 2014-15.</p>
+<p>The map above highlights point data for observed wildfires across this span of time. To explore the data, use the toggle on the top to select a year. It is observed that, while wildfires occur in nearly every area of the state, they tend to be concentrated to the west, where a majority of the forests and heavily-forested areas are. However, in order to get better at preventing wildfires, it’s important to understand what factors may most contribute to their ignition. The following exploratory analyses use data that may contribute to predicting fires.</p>
+<p>To obtain information about Oregon’s climate, we used the ‘riem’ package (available in R) to pull data from the Automated Surface Observing Systems (ASOS). Originally collected and stored by the National Weather Service, the ‘riem’ package is maintained by the Iowa Environmental Mesonet (IEM). We collected data related to dew point temperature, precipitation, and wind speed - all variables potentially related to wildfire activity. Our findings from these exploratory analyses are detailed below.</p>
+<p>First, we observe the raw number of wildfires that occur in Oregon. There is a clear pattern of the summer months, July and August, being the most common months for wildfire season. This is a break in the pattern seen across the US, where wildfres occur throughout most times of the year. This can lead us to thinking that the causes of wildfires in Oregon may hold different factors than those seen in other areas of the country.</p>
 <div class="g-col-8">
 <p><img src="or_fire.png" class="img-fluid" style="width:6in"></p>
 </div>
@@ -297,7 +307,7 @@ ul.task-list li input[type="checkbox"] {
 
 </section>
 </section>
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
     </div>
     <img src="wildfires_map.html" class="about-image
   rounded " style="width: 0em;">

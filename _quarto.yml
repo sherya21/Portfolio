@@ -23,7 +23,6 @@ website:
       issue-term: title
   navbar:
     title: false
-    height: 1inch
     background: "rgba(131, 188, 169, 0.5)"
     foreground: "#F3F7F0"
     collapse: true
@@ -48,7 +47,6 @@ website:
            href: projects/1_DigiPlay/
          - text: OnTrack
            href: projects/4_OnTrack/
-         
       - text: About
         aria-label: "About"
         href: about.qmd

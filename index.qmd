@@ -15,7 +15,7 @@ toc: false
 </div>
 
 
-<span style="font-size: 25px;"> Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. I took to architecture to try to tackle these issues but soon realized that change had to be made at a larger but solvable scale:the city. Here I am: a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. </span>
+<span style="font-size: 20px;"> Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. I took to architecture to try to tackle these issues but soon realized that change had to be made at a larger but solvable scale:the city. Here I am: a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. </span>
 
 <span style="font-size: 30px; color: #95C6B6;">See some of my work below &rarr; </span>
 

@@ -1,11 +1,12 @@
-/* css styles */
- @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+/* Font import*/
 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap'); 
 
- /*------------- Whole Document---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 
 body {
-    font-family: 'Urbanist';
+    font-family: 'Inter';
     font-size: 18px;
 }
 
@@ -14,31 +15,23 @@ body {
 header {
   background-image: url('course-icon.png');
   background-repeat: no-repeat;
-  background-size: contain; /* Adjust as needed */
-  background-position: right top; /* Adjust as needed */
-  /* Other styles for the header */
+  background-size: contain;
+  background-position: right top; 
 }
 
-
-/* Change the font style for all headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Urbanist'; /* Replace "Your Desired Font" with the actual font you want to use */
-  /* Additional styling properties can be added here, such as color, size, etc. */
+  font-family: 'Urbanist';
 }
 
-/* Adjust the size for the document title */
 .title {
-  font-size: 50px; 
+  font-size: 40px; 
 }
 
-/* Adjust the size for the document subtitle */
 .subtitle {
-  font-size: 45px; 
+  font-size: 35px; 
   color: #95C6B6;
 }
 
-
-/*----------LOGO above TOC---------*/
 
 #TOC::before {
   content: "";
@@ -51,8 +44,6 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-/*------------Table of Contents (TOC)----------- */
-
 
 .tocify {
   border: none;   /*Removes border */
@@ -60,14 +51,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
-/*body {
-  background-color: #FFFFEB; /* Replace with your desired color code or name */
-}*/
-
 
 .toc a {
   font-weight: bold;
 }
+
+/* Navigation bar at top */
 
 .navbar {
   height: 15px;
@@ -79,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
+/* Image with background while hovering */
 .hover-text {
   position: absolute;
   top: 50%;

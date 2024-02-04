@@ -29,7 +29,7 @@ about:
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
   }
 
   .color-changing-text {
@@ -108,14 +108,14 @@ How can we help?
 ### Ukraine refugees to the world between 2020-2022
 The map attempts to demonstrate the effects of the Russia-Ukraine war in 2022 on immigration. For my map, I have looked at the increase in Ukrainian migration from 2020 to 2022 and to what extent are countries accommodating Asylum seekers and UNHC Refugees. The data for Ukrainian refugees for 2020-2022 was drawn from [UNHCR’s data website](https://www.unhcr.org/data) and [shapefiles](https://hub.arcgis.com/datasets/CESJ::world-countries/about) and point data on countries were extracted from ArcGIS website.  By using a bi-variate symbology of representation, I have attempted to overlap these two categories and highlighted the most migrated-to countries of the world. It is evident that migration increased significantly in 2022 when the war begun.
 
-:::{.column-screen-inset}
-![Refugees from Ukraine in 2022](Map1_Ukraine.gif)
+:::{.column-body-offset}
+![Refugees from Ukraine in 2020-22](Map1_Ukraine.gif)
 :::
 
 ### Refugee movement from the top five sending countries
 According to a [UNHCR report](https://www.unhcr.org/en-us/figures-at-a-glance.html ) in 2022 , five countries (Afghanistan, Myanmar, South Sudan, Syria, and Venezuela) contribute to more than two thirds of global migration. The map chalks out the movement of Afghan, Burmese, South Sudanese, Syrian and Venezuelan refugees across the globe. Some countries are asylums for all these refugees whereas some of these serve only a few of these countries. The map marks out the most frequented countries of asylum. It is evident that many countries in Europe are home to all these migrants and serve as important asylums.
 
-:::{.column-screen-inset}
+:::{.column-body-offset}
 ![Refugees from top five sending countries 2022](Refugee_movement.gif)
 :::
 
@@ -123,21 +123,21 @@ According to a [UNHCR report](https://www.unhcr.org/en-us/figures-at-a-glance.ht
 ### Proximity of migrant fatalities to entry & shipping ports
 This [dataset](https://data.humdata.org/organization/iom-missing-migrants-project) was pulled from the [Missing Migrants Project](https://missingmigrants.iom.int/) by IOM. The map demonstrates the proximity of migrant fatalities to border crossing points and shipping ports. The map marks out the closest routes from the incident point to the entry point. The data is dated from January to November 2022. The data is extracted for the world but specifically, the map focuses on the Mediterranean Sea region which sees mass migration from countries like Syria, Libya, Jordan, etc. which have internal conflicts or civil wars going on. Although it is not clear where most of these migrants are traveling to, there is a massive number of fatalities closer to these entry/exit ports many of which are unofficial. The map also marks out the density of internally displaced persons in the various countries of the region. 
 
-:::{.column-screen-inset}
+:::{.column-body-offset}
 ![Proximity of migrant fatalities to entry & shipping ports](Proximityofmigrantdeaths.jpg)
 :::
 
 ### Proximity of drowning fatalities to port of entry
 Through this mapping, I investigated the occurrence of migrant fatalities and their proximity to ports. The data for all ports was extracted from the [UNHCR website](https://data.unhcr.org/en/geoservices/). The map chalks the incidents of drowning of asylum seekers near different ports of entries across the world in 2022. The data represented contains all reported incidents from January until November.It is evident that there are more ‘not official’ ports than official ones and that most drowning have occurred near unofficial ports of entries. The map is an exploration of atrocities and uncertainties faced by migrants traveling outside their homeland in seek of asylum. There is also a very evident high number of drownings near the African and Middle Eastern coasts, indicating that migrants were probably traveling northward to Europe.The biggest drowning incident (close to a hundred people) occurred near Syria. Quite a lot of instances occurred within 500km (radius) of the ports of entries.
 
-:::{.column-screen-inset}
+:::{.column-body-offset}
 ![Proximity of drowning fatalities to port of entry](Map_portofentry.gif)
 :::
 
 ### Internally Displaced Persons and acres of forests burned after forest fires (2020-2022)
 The map focuses demonstrates the relation between occurrence of climate related disasters and internal displacement. Data on internal movement from the UNHCR is used along with forest fire data from [Global Forest Watch](globalforestwatch.org). The UNHCR labelled such refugees who are affected by climate change as ‘climate refugees’. More and more refugees are expected to move internally because of unlivable conditions in increasing flood, heat and unhabitable zones across the planet. It is evident in the map that 2020 saw the greatest number of forest fires in Africa leading to further displacement of people.
 
-:::{.column-screen-inset}
+:::{.column-body-offset}
 ![](Map3_polygons.gif)
 :::
 
@@ -252,7 +252,7 @@ If the <span style="color: #547FC9;font-size: 20px; font-weight: bold;">year of 
 Scroll below for an interactive ArcGIS Storymap &darr;
 
 
-:::{.column-screen-inset}
+:::{.column-body-offset}
 <div class="image-container hoverimg">
 <a href="https://storymaps.arcgis.com/stories/9b08b7593b564221919a53dcc06f3031">
 <iframe src="https://storymaps.arcgis.com/stories/9b08b7593b564221919a53dcc06f3031" width="100%" height="400px"></iframe>
