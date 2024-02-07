@@ -12,6 +12,7 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   twitter-card: true
+  favicon: "images/logo.png"
   search: 
     location: navbar
     type: overlay
@@ -22,6 +23,7 @@ website:
       theme: body-light
       issue-term: title
   navbar:
+    logo: "images/logo.png"
     title: false
     background: "rgba(131, 188, 169, 0.5)"
     foreground: "#F3F7F0"

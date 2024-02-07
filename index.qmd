@@ -1,6 +1,6 @@
 ---
 title: "Shreya Bansal"
-subtitle: "Data Analyst, Urban Planner and Story-teller"
+subtitle: "Spatial Data Analyst, Urban Planner and Story-teller"
 format: 
   html: 
     page-layout: full
@@ -15,7 +15,7 @@ toc: false
 </div>
 
 
-<span style="font-size: 20px;"> Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. I took to architecture to try to tackle these issues but soon realized that change had to be made at a larger but solvable scale:the city. Here I am: a designer, planner, story-teller, and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. </span>
+<span style="font-size: 20px;"> Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. Motivated to make a difference, I delved into architecture, aiming to address these issues. It became apparent that the necessary change had to occur on a broader yet achievable scale—the entire city. Here I am: a planner, data analyst, story-teller, designer and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. </span>
 
 <span style="font-size: 30px; color: #95C6B6;">See some of my work below &rarr; </span>
 
