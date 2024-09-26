@@ -1,0 +1,61 @@
+---
+title: "Graphic + Book Design"
+
+categories:
+  - Photoshop
+  - Illustrator
+  - InDesign
+  - Design
+  
+subtitle: "A selection of visual projects"
+
+title-block-banner: true
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+---
+
+:::{#hero-heading}
+:::
+
+
+Here are some of many samples from various parts of my life from editing, book design to graphics and data visualization!
+
+I designed the coverpage and diagrams, directed the graphic design team and printed at the publisher,  India's first climate action plan, The <span style="font-size: 18px; color: #95C6B6;">Mumbai Climate Action Plan</span>. I single-handedly rebranded for UPenn's Department of Philosophy project, <span style="font-size: 18px; color: #95C6B6;">Philosophy4Young</span> their logo, website and children's books. I helped a young entreprenuer (my sister) publish her first recipe book, <span style="font-size: 18px; color: #95C6B6;">Granny's Chulha</span>, by designing, branding and illustrating the book. In another life, for a whole year I worked on publishing a thesis volume and project on <span style="font-size: 18px; color: #95C6B6;">'Decoding Response in the City'</span>. 
+
+Please click on each image to visit the project &rarr;
+
+:::{.grid}
+
+
+:::{.g-col}
+<a href="https://drive.google.com/file/d/1gU3Bnhk3UJ_wCFaMC1ognZBdsdDkQBY1/view">
+![](/projects/10_Graphic/MCAP.png){height=5in}
+ 
+  </a>
+
+:::
+
+:::{.g-col}
+<a href="https://www.philosophy4young.org/">
+![](/projects/10_Graphic/p4y1.png){height=5in}
+ 
+  </a>
+:::
+:::
+:::{.grid}
+:::{.g-col}
+<a href="https://www.amazon.in/GRANNYS-CHULHA-Udita-Bansal/dp/9395563648/ref=sr_1_1?crid=2CQV7Q76A0DCW&dib=eyJ2IjoiMSJ9.e0FUCM-RYgLshxlNqzPEOA.3ZdXrUvA_hxRnHmyzIEEzHq_7graSGJNRQG2QMY5Q6w&dib_tag=se&keywords=grannys+chulha+book&qid=1727324228&sprefix=grannys+chulha+boo%2Caps%2C191&sr=8-1#customerReviews">
+![](/projects/10_Graphic/gc.jpg){height=4.2in}
+ 
+  </a>
+:::
+:::{.g-col}
+
+<a href="https://drive.google.com/file/d/1xHCp4qcqAn4_rK563ZPKbIgTLEbQOeQT/view?usp=sharing">
+![](/projects/10_Graphic/thesis-copy.png){height=4.2in}
+ 
+  </a>
+:::
+:::

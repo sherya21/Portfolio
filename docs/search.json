@@ -7,116 +7,11 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
-    "objectID": "projects/4_OnTrack/index.html",
-    "href": "projects/4_OnTrack/index.html",
-    "title": "On Track",
+    "objectID": "projects/8_Thesis/index.html",
+    "href": "projects/8_Thesis/index.html",
+    "title": "Decoding Response: A case of the Walled City of Jaipur",
     "section": "",
-    "text": "See below for an interactive HTML ↓\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects/2_Wildfires/index.html",
-    "href": "projects/2_Wildfires/index.html",
-    "title": "Wildfires in US and Oregon",
-    "section": "",
-    "text": "Let’s look at WILDFIRES in the US and Oregon"
-  },
-  {
-    "objectID": "projects/2_Wildfires/index.html#us-wide-wildfires",
-    "href": "projects/2_Wildfires/index.html#us-wide-wildfires",
-    "title": "Wildfires in US and Oregon",
-    "section": "US Wide Wildfires",
-    "text": "US Wide Wildfires\n\nCauses\n\n\nWe observe trends in common causes of wildfires by year. To interact with the visualization, select a year from the center of the wheel. The information becomes increasingly detailed as the wheel is explored outwards.\nThe visualization below shows spread of recorded wildfires across the year, with the darker colors indicating more instances of wildfire. Across the last 24 years, late spring and late summer saw the most burning, with a period of increased fires during the spring of 2006. On average, less than 8,000 fires burn per month across the US - however, certain months tend to tell another story, where more than 16,000 burned in the same time period. There appears to be a slight dip in fires during the early summer months of May and June.\nNext, we observe which activities are the most likely causes of wildfires across the country depending on the time of year. According to the visualization above, arson, debris burning, and other mixed causes are commonplace throughout the year, while other common reasons tend to spike in specific seasons. For example, lightning strikes and equipment use are common causes during the summertime, when summer storms bring seasonal spikes in thundering clouds, and when people are more likely to get outside and run types of equipment that have the ability to catch ablaze. An interesting observation lies in the missing and undefined category, which is most likely to be recorded in the first half of the year.\n\n\n\n\n\n\n\n\n\n\nDashboard (Acres burnt by State)\nThe below interactive dashboard shows total acres burnt between 1992-2015 in each US state. See below for an interactive Dashboard ↓"
-  },
-  {
-    "objectID": "projects/2_Wildfires/index.html#oregons-wildfires",
-    "href": "projects/2_Wildfires/index.html#oregons-wildfires",
-    "title": "Wildfires in US and Oregon",
-    "section": "Oregon’s Wildfires",
-    "text": "Oregon’s Wildfires\nWhen discussing wildfires in the US, California is usually front and center of the narrative. However, many other states that experience similar rates of burning, yet are often left off the table. We’d like to change that narrative, focusing on Oregon’s recent wildfire trends. To complete this study, we have chosen to dig into observations taken between 2014-15.\nThe map above highlights point data for observed wildfires across this span of time. To explore the data, use the toggle on the top to select a year. It is observed that, while wildfires occur in nearly every area of the state, they tend to be concentrated to the west, where a majority of the forests and heavily-forested areas are. However, in order to get better at preventing wildfires, it’s important to understand what factors may most contribute to their ignition. The following exploratory analyses use data that may contribute to predicting fires.\nTo obtain information about Oregon’s climate, we used the ‘riem’ package (available in R) to pull data from the Automated Surface Observing Systems (ASOS). Originally collected and stored by the National Weather Service, the ‘riem’ package is maintained by the Iowa Environmental Mesonet (IEM). We collected data related to dew point temperature, precipitation, and wind speed - all variables potentially related to wildfire activity. Our findings from these exploratory analyses are detailed below.\nFirst, we observe the raw number of wildfires that occur in Oregon. There is a clear pattern of the summer months, July and August, being the most common months for wildfire season. This is a break in the pattern seen across the US, where wildfres occur throughout most times of the year. This can lead us to thinking that the causes of wildfires in Oregon may hold different factors than those seen in other areas of the country.\n\n\n\n\n\n\n\nDashboard (Acres burnt + Weather factors)\nThe visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed).\nSee below for an interactive Dashboard ↓"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Shreya Bansal",
-    "section": "",
-    "text": "Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. Motivated to make a difference, I delved into architecture, aiming to address these issues. It became apparent that the necessary change had to occur on a broader yet achievable scale— the entire city. Here I am: a planner, data analyst, story-teller, designer and climate researcher. I hope to bring a unique blend of perspective into every project I undertake. \n\n\n\nSee some of my work below → \n\n\n\n Data Analysis/ Visualization \n\n\n\n \n\n Can we predict origin of marine trash in urban areas?   Marine litter predictibility regression \n\n\n\n\n\n\n \n\n What regions of the world experience the highest number of missing migrants/ fatalities?   Refugee crisis analysis \n\n\n\n\n\n\n \n\n Do weather factors contribute to the probability of fires?   Wildfire study \n\n\n\n\n\n\n \n\n What if we could repair tracks by forecasting train delays in NJ Transit  OnTrack: Train delay prediction \n\n\n\n\n\n Research and roadmapping \n\n\n\n \n\n How to incorporate localized data-roadmapping in USVI?  USVI Data Roadmap \n\n\n\n\n\n Coding/ Digital Intervention \n\n\n\n \n\n What if installing interactive activities in playgrounds could address unequal access to play?  Digi-Play \n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Shreya Bansal",
-    "section": "",
-    "text": "A designer, thinker, story-teller, researcher and planner, I bring together my eclectic skills wherever I go. My interest lies at the intersection of climate change planning and urban technology. Currently, I work as an Analyst at Climate Policy Initiative working on CLIC and climate adaptation finance projects.\nRecently, I completed a Master of City Planning at the Weitzman School of Design, University of Pennsylvania. There I worked with Dr. Sanya Carley at the Kleinman Center for Energy Policy on energy justice research. I also cofounded the Penn Food Club and the Urban Technologies Club. Previously, I worked as a Program Associate with the World Resources Institute in Mumbai. I also hold a bachelor’s degree in architecture.\nI love all things  data visualization, book design, graphic design and research!\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects/1_DigiPlay/index.html",
-    "href": "projects/1_DigiPlay/index.html",
-    "title": "DigiPlay: Interactive Playground",
-    "section": "",
-    "text": "Full Project + Code\n  \n  \n    \n     Tutorial\n  \n  \n    \n     Slideshow\nThis is an interactive playground installation made to scale across the city of Philadelphia. DigiPlay aims to create equitable access to play and promote health for kids 2-12 in Philadelphia by turning playgrounds into interactive and immersive experiences. This is achieved by adding a digitally latent layer to playgrounds that strives to improve the play experience, supplement STEM education, and encourage more physical activity for children in Philadelphia schools."
-  },
-  {
-    "objectID": "projects/1_DigiPlay/index.html#the-challenge",
-    "href": "projects/1_DigiPlay/index.html#the-challenge",
-    "title": "DigiPlay: Interactive Playground",
-    "section": "The Challenge",
-    "text": "The Challenge\nAs it stands, many elementary school playgrounds in Philadelphia are either converted parking lots or have aging, inadequate playground equipment. As a result, 25% of the youth in Philadelphia do not get sustained physical activity even once a week. Unfortunately, upgrading and refurbishing playground equipment can cost anywhere between $8,000-$50,000, and there is no substantial line item in the Philadelphia School District’s annual budget to support upgrading playgrounds for children. As a result of this lack of physical activity, many kids in the city are facing health challenges such as obesity. In fact, 1 in 5 of youth in Philadelphia, the majority of whom are black or Hispanic, are overweight or obese. Furthermore, 70% of children in in North Philly are overweight or obese, which is nearly double the obesity and overweight rate for youth in the United States. Better access to play can solve these challenges for kids."
-  },
-  {
-    "objectID": "projects/1_DigiPlay/index.html#the-solution",
-    "href": "projects/1_DigiPlay/index.html#the-solution",
-    "title": "DigiPlay: Interactive Playground",
-    "section": "The Solution",
-    "text": "The Solution\nDigiPlay works to solve this challenge of inequitable access to play by transforming dull play spacing into interactive ones that encourage movement and serve as another avenue for learning and education in schools. Our solution has three major components, outfitting schools that already had some play equipment with DigiPlay sensors, Creating digital experiences for schools with no play equipment, and layering on educational components of the playground. Additionally, our solution is cost effective for schools to adopt. Creating 1-3 interactive installations on a playground would cost the school ~$300 to install and another ~$100 to maintain on a yearly basis."
-  },
-  {
-    "objectID": "projects/1_DigiPlay/index.html#site-selection",
-    "href": "projects/1_DigiPlay/index.html#site-selection",
-    "title": "DigiPlay: Interactive Playground",
-    "section": "Site selection",
-    "text": "Site selection\nTo facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.\n\n\n\n\n\nSite selection\n\n\n\n\n\n\n\nFinal pilot site"
-  },
-  {
-    "objectID": "projects/1_DigiPlay/index.html#technical-components",
-    "href": "projects/1_DigiPlay/index.html#technical-components",
-    "title": "DigiPlay: Interactive Playground",
-    "section": "Technical Components",
-    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\nInteract & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\n\nVideo\nHeartrate Sensor at play\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram"
-  },
-  {
-    "objectID": "projects/3_USVI/index.html",
-    "href": "projects/3_USVI/index.html",
-    "title": "Localized Approach to Data Roadmapping in USVI",
-    "section": "",
-    "text": "Full Project\n  \n  \n    \n     Permitting Dahboard mock-up\n  \n  \n    \n     OpenData Portal mock-up\n  \n  \n    \n     Book"
-  },
-  {
-    "objectID": "projects/3_USVI/index.html#introduction",
-    "href": "projects/3_USVI/index.html#introduction",
-    "title": "Localized Approach to Data Roadmapping in USVI",
-    "section": "Introduction",
-    "text": "Introduction\nUSVI is under immense climate stress. Following the hurricanes in 2017 and the pandemic in 2020, the continued climate change crisis, it is clear that we need to help the islands become more resilient and healthy. We believe that the way to make this more efficient and faster would be by using data to help plan and manage resources. Through this project we want to answer how data analytics can help St. Thomas with climate and environmental planning? What does a systemic and localized data framework look like for St.Thomas? How can local agencies leverage data to better understand and respond to climate change and help vulnerable communities?\nTo manage this it needs a robust plan and a network of real-time updates to be prepared and resilient. Currently it has over 600+ datasets that contain information around demographics and climatic stressors but these are stored across the internet in various sources. DPNR, the planning agency of the island aims to digitize some of its processes to save time and make them more efficient.\n\nCurious about how to incorporate localized data-roadmapping in USVI?\n\n\nScroll through the ArcGIS storymap below!"
-  },
-  {
-    "objectID": "projects/3_USVI/index.html#our-approach",
-    "href": "projects/3_USVI/index.html#our-approach",
-    "title": "Localized Approach to Data Roadmapping in USVI",
-    "section": "Our Approach",
-    "text": "Our Approach\nSee below for an interactive ArcGIS Storymap ↓"
-  },
-  {
-    "objectID": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
-    "href": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
-    "title": "Localized Approach to Data Roadmapping in USVI",
-    "section": "Permitting Dashboard mock-up",
-    "text": "Permitting Dashboard mock-up\nFor a more in-depth look at the dashboard ↓"
-  },
-  {
-    "objectID": "projects/3_USVI/index.html#opendata-portal-mock-up",
-    "href": "projects/3_USVI/index.html#opendata-portal-mock-up",
-    "title": "Localized Approach to Data Roadmapping in USVI",
-    "section": "OpenData Portal mock-up",
-    "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up ↓"
+    "text": "Youtube Presentation\n  \n  \n    \n     Issuu\n  \n\n      \n\n    \n  \n\n\n\nCurious about how to incorporate localized data-roadmapping in USVI?\n\n\nScroll through the ArcGIS storymap below!\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "projects/5_Migration/index.html",
@@ -154,60 +49,130 @@
     "text": "Motivation\nThis body of work holds a special place in my heart due to its urgency and significance in today’s world. As an Indian living in the US, my personal experiences have intersected with real individuals and their stories, giving a human face to the vast amount of data and analysis involved. During my travels, I had the privilege of meeting someone who had endured the hardships of seeking asylum and embarking on a journey from Syria to Germany in search of a new life. Hearing about her sacrifices, leaving behind not only her identity but also loved ones and friends, had a profound impact on me so much so that I made it my mission to unravel the causes and consequences of the crisis.\nHence, my journey at Penn has been dedicated towards exploring the pressing issue of the impending refugee crisis, delving into its spatial, statistical, and policy implications. Over the course of nearly a decade, I have been following the international news that has consistently highlighted the narrative of refugees fleeing from the Middle East and Africa, often resorting to unsafe means of migration, resulting in tragic incidents such as boat capsizing and loss of lives. The Missing Migrants Project, conducted by the International Organization for Migration has been the foundation of my work.\nAs a mapper, I am interested in looking at how these incidents are distributed across the globe. Through meticulous mapping techniques, I visualized the most common causes of death among these migrants and investigated whether proximity to country borders influenced the likelihood of drowning. Furthermore, I aimed to tackle questions such as the frequency of incidents in specific regions and the possibility of accurate statistical predictions. The analyst in me, inspired by a spatial stats class, sought to understand this challenge in the hope that policy and planning could help alleviate the fatalities and disappearances.\nSoon enough, it became evident that three regions were bearing the brunt of this crisis: North America, Northern Africa, and the Mediterranean. Drowning emerged as the leading cause of fatalities, with the Mediterranean region experiencing a significant spike, since the onset of the Syrian War. I was curious to further explore the Mediterranean crisis during my Spring semester through a migration class, focusing on the growing tensions between Turkey and Greece—a conflict rooted in centuries of history. This hostility has compounded the refugee pressure on Greece, Cyprus, and Syria. As a policy analyst, I yearned to understand how various measures implemented by Turkey and the European Union could contribute to alleviating this crisis.\nThrough these three projects, I aspire to advance my work in the direction of a policy briefing next semester. My goal is to explore how city planners and analysts can play a pivotal role in addressing these challenges. By understanding the intricate dynamics of the refugee crisis and collaborating with policymakers, I aim to contribute to the development of effective strategies that can make a tangible difference in the lives of those affected. While I understand that no data or analysis can compare to the emotions and the suffering the migrants face, it is my hope that my work and vision will impact policy decisions and make refuge easier."
   },
   {
-    "objectID": "projects/6_Photography/index.html",
-    "href": "projects/6_Photography/index.html",
-    "title": "Personal crafthouse",
+    "objectID": "projects/3_USVI/index.html",
+    "href": "projects/3_USVI/index.html",
+    "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "",
-    "text": "Under craft. Coming soon!\n\n\n Back to top"
+    "text": "Full Project\n  \n  \n    \n     Permitting Dahboard mock-up\n  \n  \n    \n     OpenData Portal mock-up\n  \n  \n    \n     Book"
   },
   {
-    "objectID": "projects/8_Thesis/index.html",
-    "href": "projects/8_Thesis/index.html",
-    "title": "Decoding Response: A case of the Walled City of Jaipur",
-    "section": "",
-    "text": "Youtube Presentation\n  \n  \n    \n     Issuu\n  \n\n      \n\n    \n  \n\n\n\nCurious about how to incorporate localized data-roadmapping in USVI?\n\n\nScroll through the ArcGIS storymap below!\n\n\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects/8_Thesis/index.html#introduction",
-    "href": "projects/8_Thesis/index.html#introduction",
-    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "objectID": "projects/3_USVI/index.html#introduction",
+    "href": "projects/3_USVI/index.html#introduction",
+    "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "Introduction",
     "text": "Introduction\nUSVI is under immense climate stress. Following the hurricanes in 2017 and the pandemic in 2020, the continued climate change crisis, it is clear that we need to help the islands become more resilient and healthy. We believe that the way to make this more efficient and faster would be by using data to help plan and manage resources. Through this project we want to answer how data analytics can help St. Thomas with climate and environmental planning? What does a systemic and localized data framework look like for St.Thomas? How can local agencies leverage data to better understand and respond to climate change and help vulnerable communities?\nTo manage this it needs a robust plan and a network of real-time updates to be prepared and resilient. Currently it has over 600+ datasets that contain information around demographics and climatic stressors but these are stored across the internet in various sources. DPNR, the planning agency of the island aims to digitize some of its processes to save time and make them more efficient.\n\nCurious about how to incorporate localized data-roadmapping in USVI?\n\n\nScroll through the ArcGIS storymap below!"
   },
   {
-    "objectID": "projects/8_Thesis/index.html#our-approach",
-    "href": "projects/8_Thesis/index.html#our-approach",
-    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "objectID": "projects/3_USVI/index.html#our-approach",
+    "href": "projects/3_USVI/index.html#our-approach",
+    "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "Our Approach",
     "text": "Our Approach\nSee below for an interactive ArcGIS Storymap ↓"
   },
   {
-    "objectID": "projects/8_Thesis/index.html#permitting-dashboard-mock-up",
-    "href": "projects/8_Thesis/index.html#permitting-dashboard-mock-up",
-    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "objectID": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
+    "href": "projects/3_USVI/index.html#permitting-dashboard-mock-up",
+    "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "Permitting Dashboard mock-up",
     "text": "Permitting Dashboard mock-up\nFor a more in-depth look at the dashboard ↓"
   },
   {
-    "objectID": "projects/8_Thesis/index.html#opendata-portal-mock-up",
-    "href": "projects/8_Thesis/index.html#opendata-portal-mock-up",
-    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "objectID": "projects/3_USVI/index.html#opendata-portal-mock-up",
+    "href": "projects/3_USVI/index.html#opendata-portal-mock-up",
+    "title": "Localized Approach to Data Roadmapping in USVI",
     "section": "OpenData Portal mock-up",
     "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up ↓"
   },
   {
-    "objectID": "projects/9_Photography/index.html",
-    "href": "projects/9_Photography/index.html",
-    "title": "Personal crafthouse",
+    "objectID": "projects/1_DigiPlay/index.html",
+    "href": "projects/1_DigiPlay/index.html",
+    "title": "DigiPlay: Interactive Playground",
     "section": "",
-    "text": "Under craft. Coming soon!\n\n\n Back to top"
+    "text": "Full Project + Code\n  \n  \n    \n     Tutorial\n  \n  \n    \n     Slideshow\nThis is an interactive playground installation made to scale across the city of Philadelphia. DigiPlay aims to create equitable access to play and promote health for kids 2-12 in Philadelphia by turning playgrounds into interactive and immersive experiences. This is achieved by adding a digitally latent layer to playgrounds that strives to improve the play experience, supplement STEM education, and encourage more physical activity for children in Philadelphia schools."
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#the-challenge",
+    "href": "projects/1_DigiPlay/index.html#the-challenge",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "The Challenge",
+    "text": "The Challenge\nAs it stands, many elementary school playgrounds in Philadelphia are either converted parking lots or have aging, inadequate playground equipment. As a result, 25% of the youth in Philadelphia do not get sustained physical activity even once a week. Unfortunately, upgrading and refurbishing playground equipment can cost anywhere between $8,000-$50,000, and there is no substantial line item in the Philadelphia School District’s annual budget to support upgrading playgrounds for children. As a result of this lack of physical activity, many kids in the city are facing health challenges such as obesity. In fact, 1 in 5 of youth in Philadelphia, the majority of whom are black or Hispanic, are overweight or obese. Furthermore, 70% of children in in North Philly are overweight or obese, which is nearly double the obesity and overweight rate for youth in the United States. Better access to play can solve these challenges for kids."
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#the-solution",
+    "href": "projects/1_DigiPlay/index.html#the-solution",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "The Solution",
+    "text": "The Solution\nDigiPlay works to solve this challenge of inequitable access to play by transforming dull play spacing into interactive ones that encourage movement and serve as another avenue for learning and education in schools. Our solution has three major components, outfitting schools that already had some play equipment with DigiPlay sensors, Creating digital experiences for schools with no play equipment, and layering on educational components of the playground. Additionally, our solution is cost effective for schools to adopt. Creating 1-3 interactive installations on a playground would cost the school ~$300 to install and another ~$100 to maintain on a yearly basis."
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#site-selection",
+    "href": "projects/1_DigiPlay/index.html#site-selection",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "Site selection",
+    "text": "Site selection\nTo facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.\n\n\n\n\n\nSite selection\n\n\n\n\n\n\n\nFinal pilot site"
+  },
+  {
+    "objectID": "projects/1_DigiPlay/index.html#technical-components",
+    "href": "projects/1_DigiPlay/index.html#technical-components",
+    "title": "DigiPlay: Interactive Playground",
+    "section": "Technical Components",
+    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\nInteract & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\n\nVideo\nHeartrate Sensor at play\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shreya Bansal",
+    "section": "",
+    "text": "Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. Motivated to make a difference, I delved into architecture, aiming to address these issues. It became apparent that the necessary change had to occur on a broader yet achievable scale— the entire city. Here I am: a planner, data analyst, story-teller, designer and climate researcher. I hope to bring a unique blend of perspective into every project I undertake. \n\n\n\nSee some of my work below → \n\n\n\n\n\n\n \n\n Can we predict origin of marine trash in urban areas?   Marine litter predictibility regression \n\n\n\n\n\n\n \n\n What regions of the world experience the highest number of missing migrants/ fatalities?   Refugee crisis analysis \n\n\n\n\n\n\n \n\n Do weather factors contribute to the probability of fires?   Wildfire study \n\n\n\n\n\n\n \n\n What if we could repair tracks by forecasting train delays in NJ Transit  OnTrack: Train delay prediction \n\n\n\n\n\n\n\n\n \n\n Graphic + Book Deisgn\n  Work Samples \n\n\n\n\n\n\n \n\n How to incorporate localized data-roadmapping in USVI?  USVI Data Roadmap \n\n\n\n\n\n\n \n\n What if installing interactive activities in playgrounds could address unequal access to play?  Digi-Play \n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Shreya Bansal",
+    "section": "",
+    "text": "A designer, thinker, story-teller, researcher and planner, I bring together my eclectic skills wherever I go. My interest lies at the intersection of climate change planning and urban technology. Currently, I work as an Analyst at Climate Policy Initiative working on CLIC and climate adaptation finance projects.\nRecently, I completed a Master of City Planning at the Weitzman School of Design, University of Pennsylvania. There I worked with Dr. Sanya Carley at the Kleinman Center for Energy Policy on energy justice research. I also cofounded the Penn Food Club and the Urban Technologies Club. Previously, I worked as a Program Associate with the World Resources Institute in Mumbai. I also hold a bachelor’s degree in architecture.\nI love all things  data visualization, book design, graphic design and research!\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/10_Graphic/index.html",
+    "href": "projects/10_Graphic/index.html",
+    "title": "Graphic + Book Design",
+    "section": "",
+    "text": "Here are some of many samples from various parts of my life from editing, book design to graphics and data visualization!\nI designed the coverpage and diagrams, directed the graphic design team and printed at the publisher, India’s first climate action plan, The Mumbai Climate Action Plan. I single-handedly rebranded for UPenn’s Department of Philosophy project, Philosophy4Young their logo, website and children’s books. I helped a young entreprenuer (my sister) publish her first recipe book, Granny’s Chulha, by designing, branding and illustrating the book. In another life, for a whole year I worked on publishing a thesis volume and project on ‘Decoding Response in the City’.\nPlease click on each image to visit the project →\n\n\n \n\n\n\n \n\n\n\n\n\n \n\n\n\n \n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html",
+    "href": "projects/2_Wildfires/index.html",
+    "title": "Wildfires in US and Oregon",
+    "section": "",
+    "text": "Let’s look at WILDFIRES in the US and Oregon"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#us-wide-wildfires",
+    "href": "projects/2_Wildfires/index.html#us-wide-wildfires",
+    "title": "Wildfires in US and Oregon",
+    "section": "US Wide Wildfires",
+    "text": "US Wide Wildfires\n\nCauses\n\n\nWe observe trends in common causes of wildfires by year. To interact with the visualization, select a year from the center of the wheel. The information becomes increasingly detailed as the wheel is explored outwards.\nThe visualization below shows spread of recorded wildfires across the year, with the darker colors indicating more instances of wildfire. Across the last 24 years, late spring and late summer saw the most burning, with a period of increased fires during the spring of 2006. On average, less than 8,000 fires burn per month across the US - however, certain months tend to tell another story, where more than 16,000 burned in the same time period. There appears to be a slight dip in fires during the early summer months of May and June.\nNext, we observe which activities are the most likely causes of wildfires across the country depending on the time of year. According to the visualization above, arson, debris burning, and other mixed causes are commonplace throughout the year, while other common reasons tend to spike in specific seasons. For example, lightning strikes and equipment use are common causes during the summertime, when summer storms bring seasonal spikes in thundering clouds, and when people are more likely to get outside and run types of equipment that have the ability to catch ablaze. An interesting observation lies in the missing and undefined category, which is most likely to be recorded in the first half of the year.\n\n\n\n\n\n\n\n\n\n\nDashboard (Acres burnt by State)\nThe below interactive dashboard shows total acres burnt between 1992-2015 in each US state. See below for an interactive Dashboard ↓"
+  },
+  {
+    "objectID": "projects/2_Wildfires/index.html#oregons-wildfires",
+    "href": "projects/2_Wildfires/index.html#oregons-wildfires",
+    "title": "Wildfires in US and Oregon",
+    "section": "Oregon’s Wildfires",
+    "text": "Oregon’s Wildfires\nWhen discussing wildfires in the US, California is usually front and center of the narrative. However, many other states that experience similar rates of burning, yet are often left off the table. We’d like to change that narrative, focusing on Oregon’s recent wildfire trends. To complete this study, we have chosen to dig into observations taken between 2014-15.\nThe map above highlights point data for observed wildfires across this span of time. To explore the data, use the toggle on the top to select a year. It is observed that, while wildfires occur in nearly every area of the state, they tend to be concentrated to the west, where a majority of the forests and heavily-forested areas are. However, in order to get better at preventing wildfires, it’s important to understand what factors may most contribute to their ignition. The following exploratory analyses use data that may contribute to predicting fires.\nTo obtain information about Oregon’s climate, we used the ‘riem’ package (available in R) to pull data from the Automated Surface Observing Systems (ASOS). Originally collected and stored by the National Weather Service, the ‘riem’ package is maintained by the Iowa Environmental Mesonet (IEM). We collected data related to dew point temperature, precipitation, and wind speed - all variables potentially related to wildfire activity. Our findings from these exploratory analyses are detailed below.\nFirst, we observe the raw number of wildfires that occur in Oregon. There is a clear pattern of the summer months, July and August, being the most common months for wildfire season. This is a break in the pattern seen across the US, where wildfres occur throughout most times of the year. This can lead us to thinking that the causes of wildfires in Oregon may hold different factors than those seen in other areas of the country.\n\n\n\n\n\n\n\nDashboard (Acres burnt + Weather factors)\nThe visualization below presents an interactive dashboard that locates individual fires across Oregon recorded between 2014-15. To interact with the map, zoom into a specific location, then hover over a specific point to reveal important details about the fire (acreage burned and date of observation), as well as weather information (precipitation, temperature, and wind speed).\nSee below for an interactive Dashboard ↓"
+  },
+  {
+    "objectID": "projects/4_OnTrack/index.html",
+    "href": "projects/4_OnTrack/index.html",
+    "title": "On Track",
+    "section": "",
+    "text": "See below for an interactive HTML ↓\n\n\n\n\n Back to top"
   },
   {
     "objectID": "projects/6_UrbanOcean/index.html",
     "href": "projects/6_UrbanOcean/index.html",
     "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
     "section": "",
-    "text": "Litter Risk Dashboard\n  \n  \n    \n     R Markdown Report\n  \n  \n    \n     Slideshow\nInteract with the dashboard below ↓"
+    "text": "Litter Risk Dashboard\n  \n  \n    \n     R Markdown Report\n  \n  \n    \n     Slideshow\nInteract with the dashboard below ↓\nWe the replicated this analysis across the 12 Urban Ocean cities: Pune, Salvador, Santa Fe, Santiago, Semarang, Surat, Chennai, Bangkok, Can Tho, Melaka, Mumbai and Panama City.\nFinally, we created a dashboard (see image below) via Javascript and HTML/CSS for this model for easier access and usability for an Urban Ocean project manager. You can explore it here under Marine Litter Assessment Dashboard."
   },
   {
     "objectID": "projects/6_UrbanOcean/index.html#the-challenge",
@@ -224,31 +189,17 @@
     "text": "The Solution\nThis project aims to navigate zero-waste siting in areas facing bleak marine litter conditions through geospatial machine learning. We present, for Urban Ocean managers, a web-based dashboard with litter data metrics, demographic metrics, and a litter accumulation risk site-selection tool serving the 12 urban ocean cities in siting zero-waste pilots."
   },
   {
-    "objectID": "projects/6_UrbanOcean/index.html#site-selection",
-    "href": "projects/6_UrbanOcean/index.html#site-selection",
-    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
-    "section": "Site selection",
-    "text": "Site selection\nTo facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.\n\n\n\n\n\nSite selection\n\n\n\n\n\n\n\nFinal pilot site"
-  },
-  {
-    "objectID": "projects/6_UrbanOcean/index.html#technical-components",
-    "href": "projects/6_UrbanOcean/index.html#technical-components",
-    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
-    "section": "Technical Components",
-    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\nInteract & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\n\nVideo\nHeartrate Sensor at play\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram"
-  },
-  {
-    "objectID": "projects/6_UrbanOcean/index.html#the-solution-1",
-    "href": "projects/6_UrbanOcean/index.html#the-solution-1",
-    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
-    "section": "The Solution",
-    "text": "The Solution\nThis project aims to navigate zero-waste siting in areas facing bleak marine litter conditions through geospatial machine learning. We present, for Urban Ocean managers, a web-based dashboard with litter data metrics, demographic metrics, and a litter accumulation risk site-selection tool serving the 12 urban ocean cities in siting zero-waste pilots."
-  },
-  {
     "objectID": "projects/6_UrbanOcean/index.html#data-analysis",
     "href": "projects/6_UrbanOcean/index.html#data-analysis",
     "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
     "section": "Data analysis",
-    "text": "Data analysis\n\n\n\nWhile conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities."
+    "text": "Data analysis\n\n\n\nWhile conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used counts of datasets like population but proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities. For the proxy datsets, we implemented a K-Nearest Neighbor analysis to determine the proximity of each data point to one another and incorporate that as an additional variable to our model. K-Nearest Neighbor (KNN) helped to find the proximity of another variant to determine high activity spots in the area. The nearest neighbor factor was repeated for land-use, roads, restaurants, water, and waste facilities.\nUltimately created three regression models: a random forest model, a linear regression model, and a “mixed” model that combined the two. We found our mixed model the best for our use case with regards to residual error when comparing predicted to observed results."
+  },
+  {
+    "objectID": "projects/9_Photography/index.html",
+    "href": "projects/9_Photography/index.html",
+    "title": "Personal crafthouse",
+    "section": "",
+    "text": "Under craft. Coming soon!\n\n\n Back to top"
   }
 ]

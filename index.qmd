@@ -23,7 +23,6 @@ toc: false
 
 <div style="padding: 20px;"> </div>
 
-<span style="font-size: 25px; color: #00000;"> Data Analysis/ Visualization </span>
 
 :::{.grid}
 :::{.g-col-3}
@@ -73,9 +72,25 @@ toc: false
 
 :::
 
-<span style="font-size: 25px; color: #00000;"> Research and roadmapping </span>
 
 :::{.grid}
+:::{.g-col-3}
+
+<div class="image-container hoverimg">
+<a href="/projects/10_Graphic/index.qmd">
+![](images/hyd.png)
+<div class="hover-text"><br> Graphic + Book Deisgn 
+
+
+</br> 
+<span style="color: #fec00f;font-size: 20px; font-weight: bold;"> Work Samples </span>
+  </div>
+  </a>
+</div>
+
+:::
+
+
 :::{.g-col-3}
 
 <div class="image-container hoverimg">
@@ -88,10 +103,7 @@ toc: false
 </div>
 
 :::
-:::
-<span style="font-size: 25px; color: #00000;"> Coding/ Digital Intervention  </span>
 
-:::{.grid}
 :::{.g-col-3}
 
 <div class="image-container hoverimg">

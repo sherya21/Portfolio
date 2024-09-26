@@ -103,6 +103,14 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-portfolio">    
         <li>
+    <a class="dropdown-item" href="../../projects/10_Graphic/" rel="" target="">
+ <span class="dropdown-text">Graphic Design</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/6_UrbanOcean/" rel="" target="">
+ <span class="dropdown-text">Urban Marine Litter Dashboard</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../projects/5_Migration/" rel="" target="">
  <span class="dropdown-text">Refugee Crisis</span></a>
   </li>  
@@ -183,8 +191,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link active" data-scroll-target="#the-challenge">The Challenge</a></li>
   <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a></li>
   <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a></li>
-  <li><a href="#site-selection" id="toc-site-selection" class="nav-link" data-scroll-target="#site-selection">Site selection</a></li>
-  <li><a href="#technical-components" id="toc-technical-components" class="nav-link" data-scroll-target="#technical-components">Technical Components</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://sherya21.github.io/portfolio/blob/main/projects/6_UrbanOcean/index.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -202,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
     <i class="bi bi-link"></i>
      <span class="about-link-text">Litter Risk Dashboard</span>
   </a>
-  <a href="" class="about-link" rel="" target="">
+  <a href="https://sherya21.github.io/projects/6_UrbanOcean/Litter_Risk_Report.html" class="about-link" rel="" target="">
     <i class="bi bi-link"></i>
      <span class="about-link-text">R Markdown Report</span>
   </a>
@@ -276,84 +282,23 @@ ul.task-list li input[type="checkbox"] {
 <div class="column-body-offset">
 <p><img src="grid.png" class="img-fluid"></p>
 </div>
-<p>While conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities.</p>
+<p>While conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used counts of datasets like population but proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities. For the proxy datsets, we implemented a K-Nearest Neighbor analysis to determine the proximity of each data point to one another and incorporate that as an additional variable to our model. K-Nearest Neighbor (KNN) helped to find the proximity of another variant to determine high activity spots in the area. The nearest neighbor factor was repeated for land-use, roads, restaurants, water, and waste facilities.</p>
+<p>Ultimately created three regression models: a random forest model, a linear regression model, and a “mixed” model that combined the two. We found our mixed model the best for our use case with regards to residual error when comparing predicted to observed results.</p>
 </section>
-<div class="column-body-offset">
-<p><img src="REPLACE.jpeg" class="img-fluid"></p>
-</div>
 <div class="column-body-offset">
 <p><img src="models.png" class="img-fluid"></p>
 </div>
+<p>We the replicated this analysis across the 12 Urban Ocean cities: Pune, Salvador, Santa Fe, Santiago, Semarang, Surat, Chennai, Bangkok, Can Tho, Melaka, Mumbai and Panama City.</p>
 <div class="column-body-offset">
 <p><img src="all.png" class="img-fluid"></p>
 </div>
-<section id="site-selection" class="level2">
-<h2 data-anchor-id="site-selection">Site selection</h2>
-<p>To facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.</p>
-<div class="grid">
-<div class="g-col-6">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="map-gif.gif" class="img-fluid figure-img" style="width:6in"></p>
-<figcaption class="figure-caption">Site selection</figcaption>
-</figure>
-</div>
-</div>
-<div class="g-col-6">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="map.webp" class="img-fluid figure-img" style="width:6in"></p>
-<figcaption class="figure-caption">Final pilot site</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="technical-components" class="level2 page-columns page-full">
-<h2 data-anchor-id="technical-components">Technical Components</h2>
-<ol type="1">
-<li><p>Interactive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment</p></li>
-<li><p>Interactive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids</p></li>
-<li><p>Interact &amp; Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active</p></li>
-</ol>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><video src="17_working.mov" class="img-fluid" controls=""><a href="17_working.mov">Video</a></video></p>
-<figcaption class="figure-caption">Heartrate Sensor at play</figcaption>
-</figure>
-</div>
-</div></div><div class="grid">
-<div class="g-col-6">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="diagram.png" class="img-fluid figure-img" style="width:6in"></p>
-<figcaption class="figure-caption">Musical Jungle Gym Module Diagram</figcaption>
-</figure>
-</div>
-</div>
-<div class="g-col-6">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="diagram-2.png" class="img-fluid figure-img" style="width:6in"></p>
-<figcaption class="figure-caption">Heart Rate Sensing Wall Module Diagram</figcaption>
-</figure>
-</div>
-</div>
-<div class="g-col-12">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="diagram-3.png" class="img-fluid figure-img" style="width:6in"></p>
-<figcaption class="figure-caption">Interactive Playground Module Diagram</figcaption>
-</figure>
-</div>
-</div>
+<p>Finally, we created a dashboard (see image below) via Javascript and HTML/CSS for this model for easier access and usability for an Urban Ocean project manager. You can explore it here under <a href="https://xxiaofan-98.github.io/Litter-risk-dashboard/">Marine Litter Assessment Dashboard</a>.</p>
+<div class="column-body-offset">
+<p><img src="REPLACE.jpeg" class="img-fluid"></p>
 </div>
 
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

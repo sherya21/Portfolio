@@ -26,6 +26,7 @@ about:
       href: https://xxiaofan-98.github.io/Litter-risk-dashboard/
     - icon: link
       text: R Markdown Report
+      href: https://sherya21.github.io/projects/6_UrbanOcean/Litter_Risk_Report.html
     - icon: file-earmark-slides
       text: Slideshow
       href: https://docs.google.com/presentation/d/1OtSIKYh0S0iYdivwFggD_dpqeD6GIeCP/edit#slide=id.p1
@@ -110,68 +111,24 @@ This project aims to navigate zero-waste siting in areas facing bleak marine lit
 :::{.column-body-offset}
 ![](grid.png)
 :::
-While conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities. 
-:::
+While conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used counts of datasets like population but proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities. For the proxy datsets, we implemented a K-Nearest Neighbor analysis to determine the proximity of each data point to one another and incorporate that as an additional variable to our model. K-Nearest Neighbor (KNN) helped to find the proximity of another variant to determine high activity spots in the area. The nearest neighbor factor was repeated for land-use, roads, restaurants, water, and waste facilities.
 
-:::{.column-body-offset}
-![](REPLACE.jpeg)
-:::
+Ultimately created three regression models: a random forest model, a linear regression model, and a “mixed” model that combined the two. We found our mixed model the best for our use case with regards to residual error when comparing predicted to observed results.
 
+:::
 :::{.column-body-offset}
 ![](models.png)
 :::
+
+We the replicated this analysis across the 12 Urban Ocean cities: Pune, Salvador, Santa Fe, Santiago, Semarang, Surat, Chennai, Bangkok, Can Tho, Melaka, Mumbai and Panama City. 
 
 :::{.column-body-offset}
 ![](all.png)
 :::
 
+Finally, we created a dashboard (see image below) via Javascript and HTML/CSS for this model for easier access and usability for an Urban Ocean project manager. You can explore it here under [ Marine Litter Assessment Dashboard](https://xxiaofan-98.github.io/Litter-risk-dashboard/).
 
-
-## Site selection
-To facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.
-
-::: {.grid}
-
-::: {.g-col-6}
-![Site selection](map-gif.gif){width=6in}
+:::{.column-body-offset}
+![](REPLACE.jpeg)
 :::
-
-::: {.g-col-6}
-![Final pilot site](map.webp){width=6in}
-
-::: 
-:::
-
-## Technical Components
-
-
-1. Interactive Playground
-Light and sound to add a digital layer of fun and excitement to old playground equipment
-
-2. Interactive Lots
-Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids
-
-3. Interact & Learn
-Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active
-
-::: {.column-margin}
-![Heartrate Sensor at play](17_working.mov)
-:::
-
-::: {.grid}
-
-::: {.g-col-6}
-![Musical Jungle Gym Module Diagram](diagram.png){width=6in}
-:::
-
-::: {.g-col-6}
-![Heart Rate Sensing Wall Module Diagram](diagram-2.png){width=6in}
-::: 
-
-::: {.g-col-12}
-![Interactive Playground Module Diagram](diagram-3.png){width=6in}
-:::
-
-:::
-
 

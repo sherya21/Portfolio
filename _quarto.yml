@@ -40,6 +40,10 @@ website:
       - text: Portfolio
         aria-label: "Portfolio"
         menu:
+         - text: Graphic Design
+           href: projects/10_Graphic/
+         - text: Urban Marine Litter Dashboard
+           href: projects/6_UrbanOcean/
          - text: Refugee Crisis
            href: projects/5_Migration/
          - text: Wildfires
