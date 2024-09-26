@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Shreya Bansal">
+<meta name="author" content="Stephanie Cheng">
+<meta name="author" content="Tianxiao Chen">
+<meta name="author" content="Xiaofan Liu">
+<meta name="author" content="Trevor Kapuvari">
+<meta name="dcterms.date" content="2024-05-07">
+
+<title>Shreya Bansal - A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta name="twitter:title" content="Shreya Bansal - A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution">
+<meta name="twitter:description" content="Analyses for Zero-Waste Piloting in Urban Ocean Cities">
+<meta name="twitter:image" content="https://sherya21.github.io/portfolio/projects/6_UrbanOcean/digi-play.gif">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-portfolio" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Portfolio</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-portfolio">    
+        <li>
+    <a class="dropdown-item" href="../../projects/5_Migration/" rel="" target="">
+ <span class="dropdown-text">Refugee Crisis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/2_Wildfires/" rel="" target="">
+ <span class="dropdown-text">Wildfires</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/3_USVI/" rel="" target="">
+ <span class="dropdown-text">USVI Data Roadmapping</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/1_DigiPlay/" rel="" target="">
+ <span class="dropdown-text">Digi-Play</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/4_OnTrack/" rel="" target="">
+ <span class="dropdown-text">OnTrack</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:bansal21shreya@gmail.com" rel="" target="">
+ <span class="menu-text">Email</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+    <a href="https://linkedin.com/in/shreya21bansal" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution</h1>
+            <p class="subtitle lead">Analyses for Zero-Waste Piloting in Urban Ocean Cities</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Climate Resilience</div>
+                <div class="quarto-category">GIS</div>
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">Dashboard</div>
+              </div>
+                  </div>
+  </div>
+  <div class="quarto-title-meta">
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+               <p>Shreya Bansal </p>
+               <p>Stephanie Cheng </p>
+               <p>Tianxiao Chen </p>
+               <p>Xiaofan Liu </p>
+               <p>Trevor Kapuvari </p>
+            </div>
+    </div>
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 7, 2024</p>
+      </div>
+    </div>
+    </div>
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link active" data-scroll-target="#the-challenge">The Challenge</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a></li>
+  <li><a href="#site-selection" id="toc-site-selection" class="nav-link" data-scroll-target="#site-selection">Site selection</a></li>
+  <li><a href="#technical-components" id="toc-technical-components" class="nav-link" data-scroll-target="#technical-components">Technical Components</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="https://sherya21.github.io/portfolio/blob/main/projects/6_UrbanOcean/index.qmd" class="toc-action">View source</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+<div class="quarto-about-solana column-body">
+  <div class="about-entity">
+    <div class="entity-contents">
+       <div class="about-links">
+  <a href="https://xxiaofan-98.github.io/Litter-risk-dashboard/" class="about-link" rel="" target="">
+    <i class="bi bi-link"></i>
+     <span class="about-link-text">Litter Risk Dashboard</span>
+  </a>
+  <a href="" class="about-link" rel="" target="">
+    <i class="bi bi-link"></i>
+     <span class="about-link-text">R Markdown Report</span>
+  </a>
+  <a href="https://docs.google.com/presentation/d/1OtSIKYh0S0iYdivwFggD_dpqeD6GIeCP/edit#slide=id.p1" class="about-link" rel="" target="">
+    <i class="bi bi-file-earmark-slides"></i>
+     <span class="about-link-text">Slideshow</span>
+  </a>
+</div>
+      <div class="about-contents"><div id="hero-heading">
+</div></div>
+    </div>
+    <img src="digi-play.gif" class="about-image
+  rounded " style="width: 0em;">
+  </div>
+</div>
+
+<style>
+  .top-space {
+    padding-top: 30px;
+  }
+</style>
+<div class="top-space">
+
+</div>
+<div class="column-screen-inset-right">
+<div style="font-size: 20px; line-height: 1.8;">
+<p>What if marine pollution could be curbed at its urban source?</p>
+</div>
+</div>
+<div class="top-space">
+
+</div>
+<div class="column-body-inset-left">
+<div style="font-size: 20px; line-height: 1.8;">
+<p>What if we could predict the probability of presence of urban marine litter?</p>
+</div>
+</div>
+<style>
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+  }
+
+  .color-changing-text {
+    display: inline-block;
+    font-size: 40px; 
+    font-weight: bold;
+  }
+</style>
+<div class="centered-container" style="font-size: 40px; line-height: 2.8;">
+<p><span style="color: #8DE6DF;"> Urban Ocean Marine Litter Assessment </span></p>
+</div>
+<p>Interact with the dashboard below ↓</p>
+<div class="column-screen">
+<iframe src="https://xxiaofan-98.github.io/Litter-risk-dashboard/" width="100%" height="600px">
+</iframe>
+</div>
+<section id="the-challenge" class="level2 column-body">
+<h2 data-anchor-id="the-challenge">The Challenge</h2>
+<p>Litter accumulation in marine ecologies poses significant cyclical health, biodiversity, and climate risks. It is estimated that 11 million metric tons of plastic waste enter the ocean every year, and this number expected to triple by 2040. Originating in urban areas, this trash accumulation poses a systemic issue in developing countries with lacking waste disposal systems and recycling programs. This often disproportionately impacts vulnerable coastal dwellers and fisherman who heavily rely on the marine ecosystem.</p>
+<p>Urban Ocean, a program by Ocean Conservancy has been developing initiatives that mitigate marine pollution, assess waste management, and enable cities to address ocean plastics and resilience. Site selection of pilot sites is made difficult due to lacking information around litter which makes it difficult for Urban Ocean’s zero-waste pilot to continue to make strides in reducing marine litter.</p>
+</section>
+<section id="the-solution" class="level2 column-body">
+<h2 data-anchor-id="the-solution">The Solution</h2>
+<p>This project aims to navigate zero-waste siting in areas facing bleak marine litter conditions through geospatial machine learning. We present, for Urban Ocean managers, a web-based dashboard with litter data metrics, demographic metrics, and a litter accumulation risk site-selection tool serving the 12 urban ocean cities in siting zero-waste pilots.</p>
+</section>
+<section id="data-analysis" class="level2 column-body page-columns page-full">
+<h2 data-anchor-id="data-analysis">Data analysis</h2>
+<div class="column-body-offset">
+<p><img src="grid.png" class="img-fluid"></p>
+</div>
+<p>While conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities.</p>
+</section>
+<div class="column-body-offset">
+<p><img src="REPLACE.jpeg" class="img-fluid"></p>
+</div>
+<div class="column-body-offset">
+<p><img src="models.png" class="img-fluid"></p>
+</div>
+<div class="column-body-offset">
+<p><img src="all.png" class="img-fluid"></p>
+</div>
+<section id="site-selection" class="level2">
+<h2 data-anchor-id="site-selection">Site selection</h2>
+<p>To facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.</p>
+<div class="grid">
+<div class="g-col-6">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="map-gif.gif" class="img-fluid figure-img" style="width:6in"></p>
+<figcaption class="figure-caption">Site selection</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-6">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="map.webp" class="img-fluid figure-img" style="width:6in"></p>
+<figcaption class="figure-caption">Final pilot site</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="technical-components" class="level2 page-columns page-full">
+<h2 data-anchor-id="technical-components">Technical Components</h2>
+<ol type="1">
+<li><p>Interactive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment</p></li>
+<li><p>Interactive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids</p></li>
+<li><p>Interact &amp; Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active</p></li>
+</ol>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><video src="17_working.mov" class="img-fluid" controls=""><a href="17_working.mov">Video</a></video></p>
+<figcaption class="figure-caption">Heartrate Sensor at play</figcaption>
+</figure>
+</div>
+</div></div><div class="grid">
+<div class="g-col-6">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="diagram.png" class="img-fluid figure-img" style="width:6in"></p>
+<figcaption class="figure-caption">Musical Jungle Gym Module Diagram</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-6">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="diagram-2.png" class="img-fluid figure-img" style="width:6in"></p>
+<figcaption class="figure-caption">Heart Rate Sensing Wall Module Diagram</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-12">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="diagram-3.png" class="img-fluid figure-img" style="width:6in"></p>
+<figcaption class="figure-caption">Interactive Playground Module Diagram</figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/sherya21\.github\.io\/portfolio");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="sherya21/sherya21.github.io/portfolio" issue-term="title" theme="body-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© CC-Shreya Bansal 2024</div>   
+    <div class="nav-footer-center"><a href="mailto:bansal21shreya@gmail.com">Get in Touch</a></div>
+    <div class="nav-footer-right">This page is built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,177 @@
+---
+title: "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution"
+author:
+- Shreya Bansal
+- Stephanie Cheng
+- Tianxiao Chen
+- Xiaofan Liu
+- Trevor Kapuvari
+date: 2024-05-07
+image: digi-play.gif
+categories:
+  - Climate Resilience
+  - GIS
+  - R
+  - Dashboard
+  
+subtitle: "Analyses for Zero-Waste Piloting in Urban Ocean Cities"
+title-block-banner: true
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: link
+      text: Litter Risk Dashboard
+      href: https://xxiaofan-98.github.io/Litter-risk-dashboard/
+    - icon: link
+      text: R Markdown Report
+    - icon: file-earmark-slides
+      text: Slideshow
+      href: https://docs.google.com/presentation/d/1OtSIKYh0S0iYdivwFggD_dpqeD6GIeCP/edit#slide=id.p1
+---
+
+:::{#hero-heading}
+:::
+
+<style>
+  .top-space {
+    padding-top: 30px;
+  }
+</style>
+
+<div class="top-space"></div>
+
+:::{.column-screen-inset-right}
+
+<div style="font-size: 20px; line-height: 1.8;">
+
+What if marine pollution could be curbed at its urban source?
+
+</div>
+:::
+
+<div class="top-space"></div>
+
+:::{.column-body-inset-left}
+<div style="font-size: 20px; line-height: 1.8;">
+
+What if we could predict the probability of presence of urban marine litter?
+
+</div>
+:::
+
+
+<style>
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+  }
+
+  .color-changing-text {
+    display: inline-block;
+    font-size: 40px; 
+    font-weight: bold;
+  }
+</style>
+
+<div class="centered-container" style="font-size: 40px; line-height: 2.8;">
+<span style="color: #8DE6DF;">
+Urban Ocean Marine Litter Assessment
+</span>
+</div>
+
+
+Interact with the dashboard below &darr;
+
+:::{.column-screen}
+<iframe src="https://xxiaofan-98.github.io/Litter-risk-dashboard/" width="100%" height="600px"></iframe>
+:::
+
+
+:::{.column-body}
+
+## The Challenge
+Litter accumulation in marine ecologies poses significant cyclical health, biodiversity, and climate risks. It is estimated that 11 million metric tons of plastic waste enter the ocean every year, and this number expected to triple by 2040. Originating in urban areas, this trash accumulation poses a systemic issue in developing countries with lacking waste disposal systems and recycling programs. This often disproportionately impacts vulnerable coastal dwellers and fisherman who heavily rely on the marine ecosystem.
+
+Urban Ocean, a program by Ocean Conservancy has been developing initiatives that mitigate marine pollution, assess waste management, and enable cities to address ocean plastics and resilience. Site selection of pilot sites is made difficult due to lacking information around litter which makes it difficult for Urban Ocean’s zero-waste pilot to continue to make strides in reducing marine litter.
+:::
+
+
+:::{.column-body}
+## The Solution
+This project aims to navigate zero-waste siting in areas facing bleak marine litter conditions through geospatial machine learning. We present, for Urban Ocean managers, a web-based dashboard with litter data metrics, demographic metrics, and a litter accumulation risk site-selection tool serving the 12 urban ocean cities in siting zero-waste pilots.
+:::
+
+:::{.column-body}
+## Data analysis
+:::{.column-body-offset}
+![](grid.png)
+:::
+While conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities. 
+:::
+
+:::{.column-body-offset}
+![](REPLACE.jpeg)
+:::
+
+:::{.column-body-offset}
+![](models.png)
+:::
+
+:::{.column-body-offset}
+![](all.png)
+:::
+
+
+
+## Site selection
+To facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.
+
+::: {.grid}
+
+::: {.g-col-6}
+![Site selection](map-gif.gif){width=6in}
+:::
+
+::: {.g-col-6}
+![Final pilot site](map.webp){width=6in}
+
+::: 
+:::
+
+## Technical Components
+
+
+1. Interactive Playground
+Light and sound to add a digital layer of fun and excitement to old playground equipment
+
+2. Interactive Lots
+Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids
+
+3. Interact & Learn
+Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active
+
+::: {.column-margin}
+![Heartrate Sensor at play](17_working.mov)
+:::
+
+::: {.grid}
+
+::: {.g-col-6}
+![Musical Jungle Gym Module Diagram](diagram.png){width=6in}
+:::
+
+::: {.g-col-6}
+![Heart Rate Sensing Wall Module Diagram](diagram-2.png){width=6in}
+::: 
+
+::: {.g-col-12}
+![Interactive Playground Module Diagram](diagram-3.png){width=6in}
+:::
+
+:::
+
+

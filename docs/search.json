@@ -39,14 +39,14 @@
     "href": "index.html",
     "title": "Shreya Bansal",
     "section": "",
-    "text": "Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. Motivated to make a difference, I delved into architecture, aiming to address these issues. It became apparent that the necessary change had to occur on a broader yet achievable scale—the entire city. Here I am: a planner, data analyst, story-teller, designer and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. \nSee some of my work below → \n\n\n\n\n\n\n \n\n What regions of the world experience the highest number of missing migrants/ fatalities?   Refugee crisis analysis \n\n\n\n\n\n\n \n\n Do weather factors contribute to the probability of fires?   Wildfire study \n\n\n\n\n\n\n \n\n How to incorporate localized data-roadmapping in USVI?  USVI Data Roadmap \n\n\n\n\n\n\n \n\n What if installing interactive activities in playgrounds could address unequal access to play?  Digi-Play \n\n\n\n\n\n\n \n\n What if we could repair tracks by forecasting train delays in NJ Transit  On Track \n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. Motivated to make a difference, I delved into architecture, aiming to address these issues. It became apparent that the necessary change had to occur on a broader yet achievable scale— the entire city. Here I am: a planner, data analyst, story-teller, designer and climate researcher. I hope to bring a unique blend of perspective into every project I undertake. \n\n\n\nSee some of my work below → \n\n\n\n Data Analysis/ Visualization \n\n\n\n \n\n Can we predict origin of marine trash in urban areas?   Marine litter predictibility regression \n\n\n\n\n\n\n \n\n What regions of the world experience the highest number of missing migrants/ fatalities?   Refugee crisis analysis \n\n\n\n\n\n\n \n\n Do weather factors contribute to the probability of fires?   Wildfire study \n\n\n\n\n\n\n \n\n What if we could repair tracks by forecasting train delays in NJ Transit  OnTrack: Train delay prediction \n\n\n\n\n\n Research and roadmapping \n\n\n\n \n\n How to incorporate localized data-roadmapping in USVI?  USVI Data Roadmap \n\n\n\n\n\n Coding/ Digital Intervention \n\n\n\n \n\n What if installing interactive activities in playgrounds could address unequal access to play?  Digi-Play \n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Shreya Bansal",
     "section": "",
-    "text": "I am second year Master of City Planning candidate at the Weitzman School of Design, University of Pennsylvania. A designer, thinker, story-teller, researcher and planner, I bring together my eclectic skills wherever I go. My research lies at the intersection of climate change planning and civic technology.\nCurrently, I am working with Dr. Sanya Carley at the Kleinman Center for Energy Policy at Penn on energy justice research. At Penn, I cofounded the Penn Food Club and the Urban Technologies Club. Last summer, I completed an internship with the Climate Policy Initiative, working on multilateral bank reform for urban climate finance. Previously, I worked as a Program Associate with the World Resources Institute in Mumbai. I also hold a bachelor’s degree in architecture.\n\n\n Back to top"
+    "text": "A designer, thinker, story-teller, researcher and planner, I bring together my eclectic skills wherever I go. My interest lies at the intersection of climate change planning and urban technology. Currently, I work as an Analyst at Climate Policy Initiative working on CLIC and climate adaptation finance projects.\nRecently, I completed a Master of City Planning at the Weitzman School of Design, University of Pennsylvania. There I worked with Dr. Sanya Carley at the Kleinman Center for Energy Policy on energy justice research. I also cofounded the Penn Food Club and the Urban Technologies Club. Previously, I worked as a Program Associate with the World Resources Institute in Mumbai. I also hold a bachelor’s degree in architecture.\nI love all things  data visualization, book design, graphic design and research!\n\n\n Back to top"
   },
   {
     "objectID": "projects/1_DigiPlay/index.html",
@@ -159,5 +159,96 @@
     "title": "Personal crafthouse",
     "section": "",
     "text": "Under craft. Coming soon!\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/8_Thesis/index.html",
+    "href": "projects/8_Thesis/index.html",
+    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "section": "",
+    "text": "Youtube Presentation\n  \n  \n    \n     Issuu\n  \n\n      \n\n    \n  \n\n\n\nCurious about how to incorporate localized data-roadmapping in USVI?\n\n\nScroll through the ArcGIS storymap below!\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/8_Thesis/index.html#introduction",
+    "href": "projects/8_Thesis/index.html#introduction",
+    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "section": "Introduction",
+    "text": "Introduction\nUSVI is under immense climate stress. Following the hurricanes in 2017 and the pandemic in 2020, the continued climate change crisis, it is clear that we need to help the islands become more resilient and healthy. We believe that the way to make this more efficient and faster would be by using data to help plan and manage resources. Through this project we want to answer how data analytics can help St. Thomas with climate and environmental planning? What does a systemic and localized data framework look like for St.Thomas? How can local agencies leverage data to better understand and respond to climate change and help vulnerable communities?\nTo manage this it needs a robust plan and a network of real-time updates to be prepared and resilient. Currently it has over 600+ datasets that contain information around demographics and climatic stressors but these are stored across the internet in various sources. DPNR, the planning agency of the island aims to digitize some of its processes to save time and make them more efficient.\n\nCurious about how to incorporate localized data-roadmapping in USVI?\n\n\nScroll through the ArcGIS storymap below!"
+  },
+  {
+    "objectID": "projects/8_Thesis/index.html#our-approach",
+    "href": "projects/8_Thesis/index.html#our-approach",
+    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "section": "Our Approach",
+    "text": "Our Approach\nSee below for an interactive ArcGIS Storymap ↓"
+  },
+  {
+    "objectID": "projects/8_Thesis/index.html#permitting-dashboard-mock-up",
+    "href": "projects/8_Thesis/index.html#permitting-dashboard-mock-up",
+    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "section": "Permitting Dashboard mock-up",
+    "text": "Permitting Dashboard mock-up\nFor a more in-depth look at the dashboard ↓"
+  },
+  {
+    "objectID": "projects/8_Thesis/index.html#opendata-portal-mock-up",
+    "href": "projects/8_Thesis/index.html#opendata-portal-mock-up",
+    "title": "Decoding Response: A case of the Walled City of Jaipur",
+    "section": "OpenData Portal mock-up",
+    "text": "OpenData Portal mock-up\nFor a more in-depth look at the open data portal mock-up ↓"
+  },
+  {
+    "objectID": "projects/9_Photography/index.html",
+    "href": "projects/9_Photography/index.html",
+    "title": "Personal crafthouse",
+    "section": "",
+    "text": "Under craft. Coming soon!\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/6_UrbanOcean/index.html",
+    "href": "projects/6_UrbanOcean/index.html",
+    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
+    "section": "",
+    "text": "Litter Risk Dashboard\n  \n  \n    \n     R Markdown Report\n  \n  \n    \n     Slideshow\nInteract with the dashboard below ↓"
+  },
+  {
+    "objectID": "projects/6_UrbanOcean/index.html#the-challenge",
+    "href": "projects/6_UrbanOcean/index.html#the-challenge",
+    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
+    "section": "The Challenge",
+    "text": "The Challenge\nLitter accumulation in marine ecologies poses significant cyclical health, biodiversity, and climate risks. It is estimated that 11 million metric tons of plastic waste enter the ocean every year, and this number expected to triple by 2040. Originating in urban areas, this trash accumulation poses a systemic issue in developing countries with lacking waste disposal systems and recycling programs. This often disproportionately impacts vulnerable coastal dwellers and fisherman who heavily rely on the marine ecosystem.\nUrban Ocean, a program by Ocean Conservancy has been developing initiatives that mitigate marine pollution, assess waste management, and enable cities to address ocean plastics and resilience. Site selection of pilot sites is made difficult due to lacking information around litter which makes it difficult for Urban Ocean’s zero-waste pilot to continue to make strides in reducing marine litter."
+  },
+  {
+    "objectID": "projects/6_UrbanOcean/index.html#the-solution",
+    "href": "projects/6_UrbanOcean/index.html#the-solution",
+    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
+    "section": "The Solution",
+    "text": "The Solution\nThis project aims to navigate zero-waste siting in areas facing bleak marine litter conditions through geospatial machine learning. We present, for Urban Ocean managers, a web-based dashboard with litter data metrics, demographic metrics, and a litter accumulation risk site-selection tool serving the 12 urban ocean cities in siting zero-waste pilots."
+  },
+  {
+    "objectID": "projects/6_UrbanOcean/index.html#site-selection",
+    "href": "projects/6_UrbanOcean/index.html#site-selection",
+    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
+    "section": "Site selection",
+    "text": "Site selection\nTo facilitate playgrounds that have existing play equipment, we first looked at all elementary and middle schools in Philadelphia. We then looked at the playgrounds across Philadelphia and narrowed down to all that serve this age group of 2-12 years. Next, we identified all playgrounds within a 0.1 mile radius of a school. To test our pilot, we chose a school closer to base called the Albert M. Greenfield playground.\n\n\n\n\n\nSite selection\n\n\n\n\n\n\n\nFinal pilot site"
+  },
+  {
+    "objectID": "projects/6_UrbanOcean/index.html#technical-components",
+    "href": "projects/6_UrbanOcean/index.html#technical-components",
+    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
+    "section": "Technical Components",
+    "text": "Technical Components\n\nInteractive Playground Light and sound to add a digital layer of fun and excitement to old playground equipment\nInteractive Lots Light and sound to add a layer of fun and excitement to abandoned parking lots used as play areas for kids\nInteract & Learn Digital sensors bring education to life at the playground from interactive science installations to take-home Arduino kits, kids can learn about health and engineering as they play and get active\n\n\n\n\n\nVideo\nHeartrate Sensor at play\n\n\n\n\n\n\n\nMusical Jungle Gym Module Diagram\n\n\n\n\n\n\n\nHeart Rate Sensing Wall Module Diagram\n\n\n\n\n\n\n\nInteractive Playground Module Diagram"
+  },
+  {
+    "objectID": "projects/6_UrbanOcean/index.html#the-solution-1",
+    "href": "projects/6_UrbanOcean/index.html#the-solution-1",
+    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
+    "section": "The Solution",
+    "text": "The Solution\nThis project aims to navigate zero-waste siting in areas facing bleak marine litter conditions through geospatial machine learning. We present, for Urban Ocean managers, a web-based dashboard with litter data metrics, demographic metrics, and a litter accumulation risk site-selection tool serving the 12 urban ocean cities in siting zero-waste pilots."
+  },
+  {
+    "objectID": "projects/6_UrbanOcean/index.html#data-analysis",
+    "href": "projects/6_UrbanOcean/index.html#data-analysis",
+    "title": "A Data-Driven Risk Assessment Dashboard for Urban Marine Pollution",
+    "section": "Data analysis",
+    "text": "Data analysis\n\n\n\nWhile conducting our analysis it was difficult to unify datasets across geographies. We used global datasets and used proxies like proximity to restaurant and shops in lieu of social behavior datasets. We then used a fishnet grid (described above) to model risk and aggregate and visualize data in ewach cell across all cities."
   }
 ]

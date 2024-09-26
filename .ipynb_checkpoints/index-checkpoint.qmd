@@ -15,30 +15,37 @@ toc: false
 </div>
 
 
-<span style="font-size: 20px;"> Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. Motivated to make a difference, I delved into architecture, aiming to address these issues. It became apparent that the necessary change had to occur on a broader yet achievable scale—the entire city. Here I am: a planner, data analyst, story-teller, designer and climate advocate. I hope to bring a unique blend of perspective into every project I undertake. </span>
+<span style="font-size: 20px;"> Born in the chaos of a growing metropolitian of India, I rejoiced the culture, food and people I encountered but the same city was home to an exploding population, extreme pollution and surge of construction. Motivated to make a difference, I delved into architecture, aiming to address these issues. It became apparent that the necessary change had to occur on a broader yet achievable scale— the entire city. Here I am: a planner, data analyst, story-teller, designer and climate researcher. I hope to bring a unique blend of perspective into every project I undertake. </span>
+<div style="padding: 15px;"> </div>
 
 <span style="font-size: 30px; color: #95C6B6;">See some of my work below &rarr; </span>
 
 
-<div style="padding: 50px;">
+<div style="padding: 20px;"> </div>
 
-</div>
-
-
+<span style="font-size: 25px; color: #00000;"> Data Analysis/ Visualization </span>
 
 :::{.grid}
-
+:::{.g-col-3}
+<div class="image-container hoverimg">
+<a href="/projects/6_UrbanOcean/index.qmd">
+![](/projects/6_UrbanOcean/4cities.png)
+  <div class="hover-text" href="/projects/5_Migration/index.qmd"><br> Can we predict origin of marine trash in urban areas? </br> 
+<span style="color: #fec00f;font-size: 20px; font-weight: bold;"> Marine litter predictibility regression </span>
+  </div>
+  </a>
+</div>
+:::
 :::{.g-col-3}
 <div class="image-container hoverimg">
 <a href="/projects/5_Migration/index.qmd">
-![](images/refu.png)
+![](/projects/5_Migration/Map1_Ukraine.gif)
   <div class="hover-text" href="/projects/5_Migration/index.qmd"><br> What regions of the world experience the highest number of missing migrants/ fatalities? </br> 
 <span style="color: #fec00f;font-size: 20px; font-weight: bold;"> Refugee crisis analysis </span>
   </div>
   </a>
 </div>
 :::
-
 
 :::{.g-col-3}
 <div class="image-container hoverimg">
@@ -54,6 +61,24 @@ toc: false
 :::{.g-col-3}
 
 <div class="image-container hoverimg">
+<a href="/projects/4_OnTrack/index.qmd">
+![](images/train.png)
+<div class="hover-text"><br> What if we could repair tracks by forecasting train delays in NJ Transit</br> 
+<span style="color: #fec00f;font-size: 20px; font-weight: bold;"> OnTrack: Train delay prediction </span>
+  </div>
+  </a>
+</div>
+
+:::
+
+:::
+
+<span style="font-size: 25px; color: #00000;"> Research and roadmapping </span>
+
+:::{.grid}
+:::{.g-col-3}
+
+<div class="image-container hoverimg">
 <a href="/projects/3_USVI/index.qmd">
 ![](images/usvi.png)
 <div class="hover-text"><br> How to incorporate localized data-roadmapping in USVI?</br> 
@@ -63,7 +88,10 @@ toc: false
 </div>
 
 :::
+:::
+<span style="font-size: 25px; color: #00000;"> Coding/ Digital Intervention  </span>
 
+:::{.grid}
 :::{.g-col-3}
 
 <div class="image-container hoverimg">
@@ -77,16 +105,4 @@ toc: false
 
 :::
 
-:::{.g-col-3}
-
-<div class="image-container hoverimg">
-<a href="/projects/4_OnTrack/index.qmd">
-![](images/train.png)
-<div class="hover-text"><br> What if we could repair tracks by forecasting train delays in NJ Transit</br> 
-<span style="color: #fec00f;font-size: 20px; font-weight: bold;"> On Track </span>
-  </div>
-  </a>
-</div>
-
-:::
 :::

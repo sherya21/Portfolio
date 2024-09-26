@@ -3,7 +3,7 @@ title: "Spatial, statistical and geo-political analysis of the refugee crisis"
 author:
 - Shreya Bansal
 date: 2023-05-02
-image: Refugee_movement.gif
+image: Map1_Ukraine.gif
 categories:
   - GIS
   - R
