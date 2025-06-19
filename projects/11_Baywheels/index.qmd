@@ -1,0 +1,114 @@
+---
+title: "Bridging the Gap: Maximizing Bay Wheels’ Impact as the Bay Area’s Last-Mile Solution"
+author:
+- Shreya Bansal
+date: 2025-06-18
+categories:
+  - Transportation
+  - R
+  - Dashboard
+
+title-block-banner: true
+about:
+  id: hero-heading
+  template: jolla
+  
+format:
+  html:
+    css: style.css
+---
+
+<style>
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .color-changing-text-2 {
+    display: inline-block;
+    font-size: 40px; 
+    font-weight: bold;
+  }
+</style>
+
+<div class="centered-container" style="font-size: 30px; line-height: 1.8;">
+ 
+Let's examine <span class="color-changing-text-2" id="playText">Bay Wheels</span> as a last-mile solution
+
+<script>
+  function changeColor() {
+    const playText = document.getElementById('playText');
+    const colors = ['#ff00bf','#11111f',  '#ffffff']; 
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+      playText.style.color = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }, 500); 
+  }
+
+  document.addEventListener('DOMContentLoaded', changeColor);
+</script>
+
+</div>
+
+## What Bay Wheels stations are likely to be last-mile hubs? 
+A map of predicted probabilities highlights the most important last-mile stations and overlays the locations of BART and Caltrain stations for context.
+
+![](Lyft_files/figure-html/duration_and_modeling-2.png)
+
+## Analysis
+Interact with the analysis file below &darr;
+
+:::{.column-screen}
+<iframe src="lyft.html" width="100%" height="600px"></iframe>
+:::
+
+
+## The Challenge
+One of the most persistent challenges in urban transportation is the “last mile” problem: how to efficiently connect people from major transit hubs—such as BART and Caltrain stations—to their final destinations, which are often beyond comfortable walking distance. This gap can discourage the use of public transit for the full journey, leading to increased car usage, congestion, and emissions.
+
+Bike share systems like Bay Wheels are uniquely positioned to solve the last-mile problem. By providing flexible, on-demand mobility, bike share can extend the reach of public transit, making it a more attractive option for commuters and visitors alike. Understanding when, where, and by whom Bay Wheels is used for last-mile connections is crucial for maximizing its impact and growing ridership.
+
+This report analyzes Bay Wheels trip data for May 2025, integrating demographic, weather, and transit station data across the entire Bay Area. The goal is to uncover the patterns and predictors of last-mile bike share usage, identify the stations that serve as key transit connectors, and provide actionable recommendations to enhance Bay Wheels’ role in solving the last-mile challenge.
+Urban Ocean, a program by Ocean Conservancy has been developing initiatives that mitigate marine pollution, assess waste management, and enable cities to address ocean plastics and resilience. Site selection of pilot sites is made difficult due to lacking information around litter which makes it difficult for Urban Ocean’s zero-waste pilot to continue to make strides in reducing marine litter.
+
+
+
+
+
+The project investigates the relationship between bike station ridership and proximity to major transit hubs to better understand last-mile trips. We’ll use BART and Caltrain station data to define transit-rich areas and then run a regression to see if there’s a significant correlation with the number of bike trips.
+![](Lyft_files/figure-html/transit_proximity_analysis-1.png)
+
+## Findings
+
+<b> 1. Transit-Oriented Neighborhoods Drive Last-Mile Usage </br> </b>
+The single strongest predictor of last-mile Bay Wheels usage is the percentage of public transit commuters in a neighborhood. Stations located in census tracts where more people rely on public transit see a much higher probability of trips starting near major transit hubs. This confirms that Bay Wheels is functioning as a true last-mile connector, especially in communities already oriented toward transit.
+
+<b> 2. Classic Bikes Dominate Last-Mile Connections</br></b> 
+The model shows that classic bikes are significantly more likely to be used for last-mile trips than electric bikes. Electric bikes, while popular for longer or more strenuous journeys, are less likely to be chosen for short hops between transit and final destinations. This suggests that maintaining a robust fleet of classic bikes at key transit-adjacent stations is essential for supporting last-mile mobility.
+
+<b> 3. Membership Status Matters: Members Are the Core Last-Mile Users<br> </b>
+Bay Wheels members are much more likely than casual users to use the system for last-mile connections. This finding highlights the importance of the membership base for supporting transit integration. Members likely use Bay Wheels as part of their daily commute, combining it with BART or Caltrain to complete their journey. Targeted incentives and communications to members could further strengthen this pattern.
+
+<b> 4. Socioeconomic and Demographic Factors Shape Usage</br></b>
+Contrary to some expectations, higher median income in a tract is associated with a greater likelihood of last-mile usage, while a higher percentage of white residents is associated with a lower likelihood. This suggests that last-mile bike share is especially valuable in diverse, transit-rich, and upwardly mobile neighborhoods. However, the effect of income is relatively small compared to the impact of transit usage rates.
+
+<b> 5. Weather and Time of Day Influence Last-Mile Demand</br></b>
+Adverse weather—especially high winds—significantly reduces the probability of last-mile trips, as does (to a lesser extent) precipitation. Additionally, the likelihood of last-mile usage increases later in the day, possibly reflecting evening commutes or after-work activities. These findings suggest that Bay Wheels should consider weather-responsive operations and ensure bike availability at key times to maximize last-mile impact.
+
+
+## Recommendations
+1. Strategic Station Placement: Expand or densify stations in neighborhoods with high public transit use and lower-to-middle incomes.
+
+2. Member Engagement: Target marketing and incentives to members, especially for last-mile trips.
+
+3. Classic Bike Availability: Ensure classic bikes are available at key last-mile stations during peak hours.
+
+4. Transit Partnerships: Collaborate with BART and Caltrain for integrated fare products and co-marketing.
+
+5. Weather-Responsive Operations: Adjust bike rebalancing and service levels in response to weather forecasts, especially at last-mile stations.
+

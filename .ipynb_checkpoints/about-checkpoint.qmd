@@ -1,6 +1,6 @@
 ---
 title: "Shreya Bansal"
-subtitle: "Data Analyst, Urban Planner and Story-teller"
+subtitle: "Data Analyst, Infromation Designer, Urban Planner and Storyteller"
 comments: false
 image: images/headshot_Shreya.jpg
 about:

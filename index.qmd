@@ -27,6 +27,16 @@ toc: false
 :::{.grid}
 :::{.g-col-3}
 <div class="image-container hoverimg">
+<a href="/projects/11_Baywheels/index.qmd">
+![](/projects/11_Baywheels/Lyft_files/figure-html/duration_and_modeling-2.png)
+  <div class="hover-text" href="/projects/11_Baywheels/index.qmd"><br> Are Bay Wheels bikes used as last mile solutions? </br> 
+<span style="color: #fec00f;font-size: 20px; font-weight: bold;"> Transit-behavior predictibility regression </span>
+  </div>
+  </a>
+</div>
+:::
+:::{.g-col-3}
+<div class="image-container hoverimg">
 <a href="/projects/6_UrbanOcean/index.qmd">
 ![](/projects/6_UrbanOcean/4cities.png)
   <div class="hover-text" href="/projects/5_Migration/index.qmd"><br> Can we predict origin of marine trash in urban areas? </br> 
@@ -57,6 +67,9 @@ toc: false
 </div>
 :::
 
+:::
+
+:::{.grid}
 :::{.g-col-3}
 
 <div class="image-container hoverimg">
@@ -70,10 +83,7 @@ toc: false
 
 :::
 
-:::
 
-
-:::{.grid}
 :::{.g-col-3}
 
 <div class="image-container hoverimg">
