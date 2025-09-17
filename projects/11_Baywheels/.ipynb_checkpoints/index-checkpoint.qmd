@@ -74,10 +74,6 @@ One of the most persistent challenges in urban transportation is the “last mil
 Bike share systems like Bay Wheels are uniquely positioned to solve the last-mile problem. By providing flexible, on-demand mobility, bike share can extend the reach of public transit, making it a more attractive option for commuters and visitors alike. Understanding when, where, and by whom Bay Wheels is used for last-mile connections is crucial for maximizing its impact and growing ridership.
 
 This report analyzes Bay Wheels trip data for May 2025, integrating demographic, weather, and transit station data across the entire Bay Area. The goal is to uncover the patterns and predictors of last-mile bike share usage, identify the stations that serve as key transit connectors, and provide actionable recommendations to enhance Bay Wheels’ role in solving the last-mile challenge.
-Urban Ocean, a program by Ocean Conservancy has been developing initiatives that mitigate marine pollution, assess waste management, and enable cities to address ocean plastics and resilience. Site selection of pilot sites is made difficult due to lacking information around litter which makes it difficult for Urban Ocean’s zero-waste pilot to continue to make strides in reducing marine litter.
-
-
-
 
 
 The project investigates the relationship between bike station ridership and proximity to major transit hubs to better understand last-mile trips. We’ll use BART and Caltrain station data to define transit-rich areas and then run a regression to see if there’s a significant correlation with the number of bike trips.
